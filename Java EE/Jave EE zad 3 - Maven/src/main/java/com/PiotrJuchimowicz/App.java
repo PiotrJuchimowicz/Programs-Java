@@ -1,4 +1,5 @@
 package com.PiotrJuchimowicz;
+import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 import java.util.logging.*;
 import java.util.*;
@@ -9,6 +10,7 @@ public class App
 {
 
     public static  void main(String[] args) throws IOException {
+        System.out.println("Start of program");
         Logger logger = Logger.getLogger(App.class.getName());
         logger.setLevel(Level.FINER);
         FileHandler fileHandler= new FileHandler("Log%g.txt",1024*1024,4);

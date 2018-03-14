@@ -1,6 +1,4 @@
-mar 12, 2018 2:43:59 AM com.PiotrJuchimowicz.App main
+mar 14, 2018 6:35:45 PM com.PiotrJuchimowicz.App main
 FINER: Początek działania aplikacji
-mar 12, 2018 2:44:04 AM com.PiotrJuchimowicz.App main
-FINE: Wywołano metody createAccount  oraz findAccount z parametrami  1 , 1 
-mar 12, 2018 2:44:06 AM com.PiotrJuchimowicz.App main
+mar 14, 2018 6:35:47 PM com.PiotrJuchimowicz.App main
 FINER: Koniec działania aplikacji
