@@ -1,2 +1,0 @@
-mar 12, 2018 2:24:32 AM com.PiotrJuchimowicz.App main
-FINER: Początek działania aplikacji
