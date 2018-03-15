@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bank-Client.iml" filepath="$PROJECT_DIR$/Bank-Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/Jave EE zad 3 - Maven.iml" filepath="$PROJECT_DIR$/Jave EE zad 3 - Maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bankclient.iml" filepath="$PROJECT_DIR$/bankclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bankcore.iml" filepath="$PROJECT_DIR$/bankcore.iml" />
     </modules>
   </component>
 </project>
