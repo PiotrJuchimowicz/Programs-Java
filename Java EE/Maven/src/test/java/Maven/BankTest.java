@@ -173,5 +173,6 @@ public class BankTest
         bank.transfer(0,1,1000);
 
         assert (bank.findObject(0).getFunds()==1000 && bank.findObject(1).getFunds()==6000);
+
     }
 }
