@@ -1,6 +1,0 @@
-com\PiotrJuchimowicz\Account.class
-com\PiotrJuchimowicz\App.class
-com\PiotrJuchimowicz\Bank$AccountIdException.class
-com\PiotrJuchimowicz\Bank$InsufficientFundsException.class
-com\PiotrJuchimowicz\Bank.class
-com\PiotrJuchimowicz\BankImpl.class
