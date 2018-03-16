@@ -1,0 +1,4 @@
+mar 16, 2018 1:58:22 AM Maven.Main main
+FINER: Początek działania aplikacji
+mar 16, 2018 1:58:25 AM Maven.Main main
+FINER: Koniec działania aplikacji

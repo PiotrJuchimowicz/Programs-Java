@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BankClient/BankClient.iml" filepath="$PROJECT_DIR$/BankClient/BankClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BankCore/BankCore.iml" filepath="$PROJECT_DIR$/BankCore/BankCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mavenn.iml" filepath="$PROJECT_DIR$/Mavenn.iml" />
+    </modules>
+  </component>
+</project>
