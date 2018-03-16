@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06d6ace4-72ae-457c-8525-3973b47ccfa6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Logs/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Logs/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Logs/src/com/company/BankTest.java" afterPath="$PROJECT_DIR$/../Logs/src/com/company/BankTest.java" />
-      <change beforePath="$PROJECT_DIR$/../Maven/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../Maven/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/../Maven/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Maven/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Maven/BankCore/src/test/java/Maven/BankImplTest.java" afterPath="$PROJECT_DIR$/../Maven/BankCore/src/test/java/Maven/BankImplTest.java" />
-      <change beforePath="$PROJECT_DIR$/../Maven/Log0.txt" afterPath="$PROJECT_DIR$/../Maven/Log0.txt" />
-      <change beforePath="$PROJECT_DIR$/../Maven/Log1.txt" afterPath="$PROJECT_DIR$/../Maven/Log1.txt" />
-      <change beforePath="$PROJECT_DIR$/../Tests/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Tests/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Tests/src/com/company/Account.java" afterPath="$PROJECT_DIR$/../Tests/src/com/company/Account.java" />
-      <change beforePath="$PROJECT_DIR$/../Tests/src/com/company/BankImpl.java" afterPath="$PROJECT_DIR$/../Tests/src/com/company/BankImpl.java" />
-      <change beforePath="$PROJECT_DIR$/../Tests/src/com/company/BankTest.java" afterPath="$PROJECT_DIR$/../Tests/src/com/company/BankTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -142,7 +131,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -414,8 +403,7 @@
     <option name="totallyTimeSpent" value="3223000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -426,7 +414,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18478261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18478261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30108696" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
