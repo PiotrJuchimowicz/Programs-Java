@@ -13,6 +13,7 @@
     <bytecodeTargetLevel>
       <module name="BankClient" target="1.5" />
       <module name="BankCore" target="1.5" />
+      <module name="Maven" target="1.5" />
       <module name="Mavenn" target="1.5" />
     </bytecodeTargetLevel>
   </component>

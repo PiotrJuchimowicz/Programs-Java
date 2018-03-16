@@ -1,14 +1,4 @@
-mar 16, 2018 2:04:16 AM Maven.Main main
+mar 16, 2018 5:51:31 PM Maven.Main main
 FINER: Początek działania aplikacji
-mar 16, 2018 2:04:26 AM Maven.Main main
-FINE: Wywołano metody createAccount  oraz findAccount z parametrami  Piotr Juchimowicz , Łomża 
-mar 16, 2018 2:04:32 AM Maven.Main main
-CONFIG: Nie ma tylu środków na koncie
-Maven.Bank$InsufficientFundsException
-	at Maven.BankImpl.withdraw(BankImpl.java:90)
-	at Maven.Main.main(Main.java:127)
-
-mar 16, 2018 2:04:37 AM Maven.Main main
-FINE: Wywołano metodę getBalance z parametrem  0 
-mar 16, 2018 2:04:41 AM Maven.Main main
+mar 16, 2018 5:51:35 PM Maven.Main main
 FINER: Koniec działania aplikacji

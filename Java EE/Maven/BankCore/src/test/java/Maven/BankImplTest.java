@@ -10,43 +10,45 @@ import static org.junit.Assert.*;
 public class BankImplTest
 
 {
-    private BankImpl bank;
+    private static BankImpl bank;
 
-    //Robi sie przed kazdym testem
-    @Before
-    public void start() {
+    //Robi sie przed wywołaniem wszystkich metod testowych
+    @BeforeClass
+    public static void start() {
         bank = new BankImpl();
         bank.createAccount("Piotr Juchimowicz", "Łomża");
         bank.createAccount("Michał Kuc","Białystok");
+        bank.createAccount("Marek Ciborowski","Warszawa");
     }
 
     //Test dla zmiennej przyporządkowywującej kolejne id
     @Test
     public void test1() {
-        assert BankImpl.getNumber() == 2;
+        assert BankImpl.getNumber() == 3;
     }
     //Test dla konstruktora
     @Test
     public void test2() {
         assert bank.getList() != null;
-
     }
 
     //Testy dla metody  createAccount
     //Sprawdza czy prawidłowo dodano konto.Myślę że atomowość jest ok.
+    //Testy odpalaja się w różnej kolejności,nie mozna porownywac do pol ktore moga ulec zmianie przez te testy
     @Test
     public void test3()
     {
         assert bank.getList().get(0).getAddress().equals("Łomża");
         assert bank.getList().get(0).getName().equals("Piotr Juchimowicz");
-        assert bank.getList().get(0).getFunds()==0;
+        assert bank.getList().get(0).getId()==0;
+
 
     }
     //Sprawdza czy metoda zwroci id juz istniejacego konta
     @Test
     public void test4()
     {
-        assert bank.createAccount("Piotr Juchimowicz", "Łomża")==0;
+        assert bank.createAccount("Marek Ciborowski", "Warszawa")==2;
 
 
 
@@ -63,14 +65,15 @@ public class BankImplTest
     @Test
     public void test6()
     {
-        assert bank.findAccount("Marek Ciborowski","Białystok") ==null;
+        assert bank.findAccount("Szymon Tarczewski","Białystok") ==null;
     }
     //Testuje metode deposit
     @Test
     public void test7()
     {
+        float var=bank.getList().getFirst().getFunds();
         bank.deposit(0,2500);
-        assert bank.getList().getFirst().getFunds()==2500;
+        assert bank.getList().getFirst().getFunds()==var+2500;
     }
     //Metoda ma zwrócić wyjątek dla niepoprawnego id
     @Test
@@ -87,8 +90,9 @@ public class BankImplTest
     @Test
     public void test9()
     {
-        bank.deposit(1,10000);
-        assert bank.findObject(1).getFunds()==10000;
+        long var=bank.getBalance(1);
+        bank.deposit(1,500);
+        assert bank.findObject(1).getFunds()==var+500;
 
     }
     //Testy dla metody withdraw
@@ -173,5 +177,6 @@ public class BankImplTest
 
         assert (bank.findObject(0).getFunds()==1000 && bank.findObject(1).getFunds()==6000);
     }
+
 
 }

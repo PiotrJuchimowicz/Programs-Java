@@ -32,7 +32,7 @@ public class Account
     }
 
     public float getFunds() {
-        return funds;
+        return this.funds;
     }
 
     public void setFunds(float funds)
