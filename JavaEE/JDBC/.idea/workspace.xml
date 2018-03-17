@@ -2,98 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06d6ace4-72ae-457c-8525-3973b47ccfa6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/JDBC/Account.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/JDBC/Client.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/378e8f2c-15f5-4916-a389-1cf537051e71.xml" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/JDBC/ConnectionFactory.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/log/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/log/log.ctrl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/log/log1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/log/logmirror.ctrl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c10.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c101.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c111.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c121.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c130.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c141.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c150.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c161.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c171.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c180.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c191.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c1a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c1b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c1c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c1d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c1e0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c1f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c20.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c200.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c211.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c221.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c230.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c241.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c251.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c260.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c271.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c281.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c290.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c2a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c2b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c2c1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c2d0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c2e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c2f0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c300.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c31.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c311.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c321.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c331.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c340.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c351.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c361.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c371.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c380.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c391.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c3a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c3b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c3c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c3d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c3e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c3f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c400.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c41.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c411.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c421.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c430.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c441.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c451.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c461.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c470.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c481.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c490.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c4a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c4b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c4c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c4d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c4e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c51.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c60.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c71.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c81.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/c90.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/ca1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/cb1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/cc0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/cd1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/ce1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/seg0/cf0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Base/service.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataBase/derby.log" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,6 +27,11 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="DB" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="DB" type="feb32156:DbDataSourceImpl" />
+        <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -163,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Account.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-267">
@@ -185,6 +100,27 @@
                 <element signature="e#871#872#0" expanded="true" />
                 <element signature="e#913#914#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/ConnectionFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ACCOUNT" pinned="false" current-in-tab="false">
+        <entry file="das://table:/9865bda2/36202e3d-071e-438b-823f-a439480ff9ff/APP.ACCOUNT">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -256,6 +192,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/36202e3d-071e-438b-823f-a439480ff9ff/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/JDBC/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/JDBC/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JDBC/ConnectionFactory.java" />
       </list>
     </option>
   </component>
@@ -357,7 +294,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../jdbcexample" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Derby (Embedded)&#10;Oracle&#10;Sqlite (Xerial)" />
   </component>
   <component name="RunDashboard">
@@ -528,7 +465,7 @@
       <workItem from="1521212312367" duration="2380000" />
       <workItem from="1521224251117" duration="367000" />
       <workItem from="1521299974869" duration="8137000" />
-      <workItem from="1521319432282" duration="1520000" />
+      <workItem from="1521319432282" duration="2469000" />
     </task>
     <servers />
   </component>
@@ -547,11 +484,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13247000" />
+    <option name="totallyTimeSpent" value="14196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -797,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/JDBC/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36202e3d-071e-438b-823f-a439480ff9ff/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -817,6 +745,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9865bda2/36202e3d-071e-438b-823f-a439480ff9ff/APP.ACCOUNT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/JDBC/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -849,26 +816,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/Account.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/ConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="88">
+          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
           <folding>
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
