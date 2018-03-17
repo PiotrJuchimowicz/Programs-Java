@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="@localhost" uuid="b105ff71-50e9-4eb5-b94b-b79de3ee788c">
-      <database-info product="Oracle" version="Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
-        <extra-name-characters>$#</extra-name-characters>
+    <data-source name="DB" uuid="36202e3d-071e-438b-823f-a439480ff9ff">
+      <database-info product="Apache Derby" version="10.14.1.0 - (1808820)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.14.1.0 - (1808820)">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <user-name>hr</user-name>
-      <introspection-schemas>*:HR</introspection-schemas>
+      <user-name>app</user-name>
+      <introspection-schemas>*:APP</introspection-schemas>
     </data-source>
   </component>
 </project>
