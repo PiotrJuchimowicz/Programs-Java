@@ -1,0 +1,19 @@
+----------------------------------------------------------------
+Sat Mar 17 19:48:39 CET 2018:
+ Uruchamianie wersji The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820) systemu Derby: instancja a816c00e-0162-354a-d51e-00000e9f9910
+w katalogu bazy danych C:\Users\Piotr\Desktop\Projekty Java-local rep\Java EE\JDBC\DataBase\Base sun.misc.Launcher$AppClassLoader@63947c6b 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_161-b12
+user.dir=C:\Users\Piotr\Desktop\Projekty Java-local rep\Java EE\JDBC\DataBase
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Uruchomiono program ³aduj¹cy klasê bazy danych - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Mar 17 20:18:02 CET 2018: Shutting down Derby engine
+----------------------------------------------------------------
+Sat Mar 17 20:18:02 CET 2018:
+Wy³¹czanie instancji a816c00e-0162-354a-d51e-00000e9f9910
+----------------------------------------------------------------
