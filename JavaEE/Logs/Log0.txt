@@ -1,0 +1,20 @@
+mar 18, 2018 11:51:11 PM com.company.Main main
+FINER: Początek działania aplikacji
+mar 18, 2018 11:51:22 PM com.company.Main main
+FINE: Wywołano metody createAccount  oraz findAccount z parametrami  Damian , Kraków 
+mar 18, 2018 11:51:37 PM com.company.Main main
+FINE: Wywołano metodę deposit z parametrami  0 , 12 
+mar 18, 2018 11:51:40 PM com.company.Main main
+FINE: Wywołano metodę getBalance z parametrem  0 
+mar 18, 2018 11:51:47 PM com.company.Main main
+CONFIG: Nie ma tylu środków na koncie
+com.company.Bank$InsufficientFundsException
+	at com.company.BankImpl.withdraw(BankImpl.java:90)
+	at com.company.Main.main(Main.java:128)
+
+mar 18, 2018 11:51:55 PM com.company.Main main
+FINE: Wywołano metodę deposit z parametrami  0 , 100 
+mar 18, 2018 11:52:01 PM com.company.Main main
+FINE: Wywołano metodę withdraw z parametrami  0 , 88 
+mar 18, 2018 11:52:03 PM com.company.Main main
+FINER: Koniec działania aplikacji

@@ -9,7 +9,7 @@ public class BankTest
 {
     private static BankImpl bank;
 
-    //Robi sie przed wywołaniem wszystkich metod testowych
+    //Wykonuje sie przed wywołaniem wszystkich metod testowych
     @BeforeClass
     public static void start() {
         bank = new BankImpl();
@@ -23,15 +23,13 @@ public class BankTest
     public void test1() {
         assert BankImpl.getNumber() == 3;
     }
-    //Test dla konstruktora
+
     @Test
     public void test2() {
         assert bank.getList() != null;
     }
 
     //Testy dla metody  createAccount
-    //Sprawdza czy prawidłowo dodano konto.Myślę że atomowość jest ok.
-    //Testy odpalaja się w różnej kolejności,nie mozna porownywac do pol ktore moga ulec zmianie przez te testy
     @Test
     public void test3()
     {
@@ -47,18 +45,16 @@ public class BankTest
     {
         assert bank.createAccount("Marek Ciborowski", "Warszawa")==2;
 
-
-
     }
     //Testuje czy mozna odnaleźć konto po konkretnym id
     @Test
     public void test5()
     {
-        //Moglem tez porownac przez assert po prostu.
+
         assertEquals("Niepoprawne id",1,bank.findAccount("Michał Kuc","Białystok"),0);
 
     }
-    //Testuje czy zwroci null jesli brak konta o danym adresie
+    //Testuje czy zwroci null jesli brak konta
     @Test
     public void test6()
     {
@@ -111,7 +107,7 @@ public class BankTest
     @Test
     public void test11()
     {
-        assert bank.findObject(0).getFunds()==0;
+         bank.findObject(0).setFunds(0);
         bank.deposit(0,2000);
         try
         {
@@ -174,7 +170,6 @@ public class BankTest
 
         assert (bank.findObject(0).getFunds()==1000 && bank.findObject(1).getFunds()==6000);
     }
-
 
 
 }

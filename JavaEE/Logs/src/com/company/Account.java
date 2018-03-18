@@ -1,5 +1,7 @@
 package com.company;
 
+//Każde konto  w chiwli utworzenia otrzymuje automatycznie unikalne id
+//Numeracja od id=0
 public class Account
 {
     private int id;
@@ -14,8 +16,6 @@ public class Account
         this.name=name;
         this.address=addres;
         this.funds=funds;
-
-
 
     }
 

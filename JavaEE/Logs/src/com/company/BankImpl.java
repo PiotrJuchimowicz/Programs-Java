@@ -1,18 +1,18 @@
 package com.company;
 
 import java.util.LinkedList;
-//Numer czlowieka na liscie to rowniez jego id
+
  public class BankImpl implements Bank
 {
     private LinkedList<Account> list;
-    private static int number;//Zlicza klientów
+    private static int number;//Pole do przypisywania id kontom
 
     public BankImpl()
     {
         list = new LinkedList<Account>();
         number=0;
     }
-    //Zwraca id konta dla podanych parametrów
+    //Zwraca id konta dla podanych parametrów lub null jeśli nie odnaleziono konta
     public Integer findAccount(String name,String address)
     {
         for(int i=0;i<list.size();i++)
@@ -56,14 +56,14 @@ import java.util.LinkedList;
      public void deposit(Integer id, long amount) throws AccountIdException
      {
 
-         //Szuka konta o takim id i dodaje mu środki
+
         for(int i=0;i<list.size();i++)
             if (list.get(i).getId() == id)
             {
                 list.get(i).setFunds(list.get(i).getFunds()+amount);
                 return;
             }
-        //Wyrzuca wyjątek jeśli nie ma takiego konta
+
             throw new  AccountIdException();
      }
 

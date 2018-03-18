@@ -2,8 +2,6 @@ package com.company;
 
 public interface Bank
 {
-
-
         /**
          * Tworzy nowe lub zwraca id istniejącego konta.
          * @param name imie i nazwisko własciciela
@@ -11,7 +9,7 @@ public interface Bank
          * @return id utworzonego lub istniejacego konta.
          */
         Integer createAccount(String name, String address);
-/*
+/**
 
          * Znajduje identyfikator konta.
          * @param name imię i nazwisko właściciela
@@ -20,7 +18,7 @@ public interface Bank
 */
         Integer findAccount(String name, String address);
 
-/*
+/**
          * Dodaje srodki do konta.
          * @param id
          * @param amount srodki
@@ -28,7 +26,7 @@ public interface Bank
 */
         void deposit(Integer id, long amount);
 
-/*
+/**
          * Zwraca ilosc srodkow na koncie.
          * @param id
          * @return srodki
@@ -36,7 +34,7 @@ public interface Bank
 */
         long getBalance(Integer id);
 
-/*
+/**
          * Pobiera srodki z konta.
          * @param id
          * @param amount srodki
@@ -45,7 +43,7 @@ public interface Bank
 */
         void withdraw(Integer id, long amount);
 
-/*
+/**
          * Przelewa srodki miedzy kontami.
          * @param idSource
          * @param idDestination
