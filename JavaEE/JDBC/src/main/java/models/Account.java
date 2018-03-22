@@ -1,4 +1,4 @@
-package JDBC;
+package models;
 
 public class Account
 {

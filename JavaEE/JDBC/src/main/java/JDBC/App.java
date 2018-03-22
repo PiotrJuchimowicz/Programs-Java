@@ -19,10 +19,28 @@ package JDBC;
 import java.sql.*;
 public class App 
 {
-    public static void main( String[] args )throws  SQLException
+    public static void main( String[] args )throws  SQLException,ClassNotFoundException
     {
 
+        Connection con=ConnectionFactory.getConnection();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
         try
         {
             Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -60,7 +78,7 @@ public class App
 
         connection.close();
 
-
+*/
     }
 
 }
