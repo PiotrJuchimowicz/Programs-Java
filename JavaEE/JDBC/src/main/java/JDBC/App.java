@@ -19,11 +19,48 @@ package JDBC;
 import java.sql.*;
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args )throws  SQLException
     {
 
 
-        Connection conn = ConnectionFactory.getConnection();
+        try
+        {
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+        }
+        catch(ClassNotFoundException ex)
+        {
+            System.out.println("Unable to load driver.");
+            System.exit(1);
+        }
+
+        Connection connection = null;
+
+        String URL = "jdbc:oracle:thin:@localhost:1521:XE";
+        String USER = "hr";
+        String PASS = "hr";
+
+        try
+        {
+            connection = DriverManager.getConnection(URL, USER, PASS);
+        }
+
+        catch(SQLException e)
+        {
+            System.out.println("Error");
+            e.printStackTrace();
+        }
+
+        Statement statement =connection.createStatement();
+        ResultSet rs=statement.executeQuery("select * from JOBS");
+
+        while(rs.next()){
+            System.out.println(rs.getString(1));
+        }
+
+        connection.close();
+
+
     }
 
 }
