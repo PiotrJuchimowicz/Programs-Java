@@ -1,17 +1,16 @@
 package Dao;
 
 import JDBC.ConnectionFactory;
-import models.Client;
+import models.Account;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Scanner;
 
-public class ClientDao implements  ClientDaoInteface
+public class AccountDao implements  AccountDaoInteface
 {
-    public void save(Client t) throws  SQLException
+    public void save(Account a) throws SQLException
     {
         Connection connection= ConnectionFactory.getConnection();
         if(connection==null)
@@ -20,11 +19,11 @@ public class ClientDao implements  ClientDaoInteface
             return;
         }
         //  SQL query
-        String sql="INSERT INTO " +"CLIENT"+ " VALUES (?,?,?,?,?)";
+        String sql="INSERT INTO " +"ACCOUNT"+ " VALUES (?,?,?,?)";
         PreparedStatement preparedStatement=null;
         try
         {
-             preparedStatement = connection.prepareStatement(sql);
+            preparedStatement = connection.prepareStatement(sql);
         }
 
         catch (SQLException e)
@@ -35,24 +34,17 @@ public class ClientDao implements  ClientDaoInteface
         }
 
         // data preparation
-        preparedStatement.setInt(1,t.getId() );
-        preparedStatement.setString(2,t.getFirstName() );
-        preparedStatement.setString(3,t.getLastName() );
-        preparedStatement.setString(4,t.getPesel() );
-        preparedStatement.setString(5,t.getEmail() );
+        preparedStatement.setInt(1,a.getId() );
+        preparedStatement.setString(2,a.getNotes() );
+        preparedStatement.setLong(3,a.getBalance() );
+        //Setting foreign key
+
+        preparedStatement.setInt(4,a.getId_client() );
 
         // execute insert SQL stetement
         preparedStatement.executeUpdate();
 
         preparedStatement.close();
         connection.close();
-
-
-        
-
-
-
-
-
     }
 }

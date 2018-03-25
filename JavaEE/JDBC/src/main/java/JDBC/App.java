@@ -35,6 +35,7 @@ public class App
         //  Next id will be stored in file for being unique
         //  This value must be 0,when program starts
         //  I keep last clientID and accountID in file to be able to use program repeatedly
+        // Client may have more than one Account
 
         //  Tables will be  made
         //  Creating streams to files(must add streams to Account.ID)
@@ -52,19 +53,34 @@ public class App
         //consoleScanner.nextLine();
         if(choose==0)
        {
+           //Initialise ID-number for clients and accounts
            PrintWriter printWriter = new PrintWriter("ClientID.txt");
            printWriter.print(0);
            printWriter.close();
+           PrintWriter printWriter1=new PrintWriter("AccountID.txt");
+           printWriter1.print(0);
+           printWriter1.close();
+
        }
 
        //reading actual clientID
         Scanner fileScanner = new Scanner(new File("ClientID.txt"));
+        //Reading actual clientID from file
         String actualID=fileScanner.next();
+        fileScanner.close();
+        //Parsing to int
         int var=Integer.parseInt(actualID);
 
         //  Setting it for Client static  atribute
         //  It will be used with  constructor to make all data unique
          Client.setNumber(var);
+
+         //  Same things with AccountID
+       Scanner fileScanner1=new Scanner(new File("AccountID.txt"));
+       actualID=fileScanner1.next();
+       fileScanner1.close();
+       var=Integer.parseInt(actualID);
+       Account.setNumber(var);
 
         do {
 
@@ -82,43 +98,66 @@ public class App
             {
                 case 1:
                 {
-                    System.out.println("Choose 1 for Client or 2 for Account");
+                    System.out.println("Click 1 for adding client or 2 for adding account");
                     choose=consoleScanner.nextInt();
+                    if(choose==1) {
+                        System.out.println("You are now adding Client");
 
-                    if(choose==1)
-                    {
-                        String firstName,lastName,email,PESEL;
+
+                        String firstName, lastName, email, PESEL;
                         System.out.println("Enter: firstName,lastName,PESEL,e-mail");
-                        firstName=consoleScanner.next();
-                        lastName=consoleScanner.next();
-                        email=consoleScanner.next();
-                        PESEL=consoleScanner.next();
+                        firstName = consoleScanner.next();
+                        lastName = consoleScanner.next();
+                        email = consoleScanner.next();
+                        PESEL = consoleScanner.next();
 
-                        Client c = new Client(firstName,lastName,email,PESEL);
+                        Client c = new Client(firstName, lastName, email, PESEL);
 
-                        ClientDaoInteface clientDao= new ClientDao();
-                        clientDao.save(c,"CLIENT");
+                        ClientDaoInteface clientDao = new ClientDao();
+                        clientDao.save(c);
 
                         //Incrementing number to make next person unique
-                        Client.setNumber(Client.getNumber()+1);
+                        Client.setNumber(Client.getNumber() + 1);
+
+                    }
+                    else if(choose==2)
+                    {
+                        System.out.println("You are now adding account");
+                        System.out.println("Enter id of client");
+                        int id=consoleScanner.nextInt();
+
+                        //It may not be someone with that id-exception!
+                        System.out.println("Enter: Notes,Balance");
+                        //exceptions!
+                        String notes=consoleScanner.next();
+                        consoleScanner.nextLine();
+
+                        long balance=consoleScanner.nextLong();
+
+                        Account a = new Account(notes,balance,id);
+
+                        AccountDaoInteface accountDao= new AccountDao();
+                        accountDao.save(a);
+
+
+
+
+
+
+                        //Incremeting number to make next person unique
+                        Account.setNumber(Account.getNumber()+1);
+
+
+                    }
 
 
                         break;
                     }
-                    else
-                        if(choose==2)
-                        {
-                            //Not implemented
-                            break;
-                        }
-                        else
-                        {
-                            System.out.println("Bad Choice");//better exception
-                            break;
-                        }
 
 
-                }
+
+
+
 
                 case 2:
                 {
@@ -146,13 +185,18 @@ public class App
                 case 6:
                 {
                     System.out.println("Bye!");
-                    fileScanner.close();
+
                     consoleScanner.close();
                     //Must save actual numbers (client and account)
                     //Saving actual number of clients
                     PrintWriter printWriter =new PrintWriter("ClientID.txt");
                     printWriter.print(Client.getNumber());
                     printWriter.close();
+
+                    //Saving for account
+                    PrintWriter printWriter1=new PrintWriter("AccountID.txt");
+                    printWriter1.print(Account.getNumber());
+                    printWriter1.close();
                     return;
                 }
                 default:
