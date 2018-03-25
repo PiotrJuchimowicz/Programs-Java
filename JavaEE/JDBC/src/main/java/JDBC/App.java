@@ -98,7 +98,7 @@ public class App
             {
                 case 1:
                 {
-                    System.out.println("Click 1 for adding client or 2 for adding account");
+                    System.out.println("Click 1 to add client or 2 to add account");
                     choose=consoleScanner.nextInt();
                     if(choose==1) {
                         System.out.println("You are now adding Client");
@@ -120,7 +120,7 @@ public class App
                         Client.setNumber(Client.getNumber() + 1);
 
                     }
-                    else if(choose==2)
+                    else if(choose==2)//There may be client with many accounts
                     {
                         System.out.println("You are now adding account");
                         System.out.println("Enter id of client");
