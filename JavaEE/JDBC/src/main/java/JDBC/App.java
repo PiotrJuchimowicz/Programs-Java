@@ -48,7 +48,7 @@ public class App
 
 
         //number in file numberID must be 0 if it is first run of program
-        System.out.println("Click 0 if you run this  program for the first time.");
+        System.out.println("Click 0 if you run this  program for the first time.Otherwise click 1");
         choose=consoleScanner.nextInt();
         //consoleScanner.nextLine();
         if(choose==0)
@@ -122,8 +122,8 @@ public class App
                     }
                     else if(choose==2)//There may be client with many accounts
                     {
-                        System.out.println("You are now adding account");
-                        System.out.println("Enter id of client");
+                        System.out.println("You are now adding Account");
+                        System.out.println("Enter the client id");
                         int id=consoleScanner.nextInt();
 
                         //It may not be someone with that id-exception!
@@ -161,14 +161,90 @@ public class App
 
                 case 2:
                 {
-                    //Not implemented
-                    //Numbers must be decremented
+                    System.out.println("Choose 1 to delete Clients or 2 to delete Accounts.");//cant update keys
+                    choose=consoleScanner.nextInt();//exceptions,what is choose ==3
+                    if(choose==1)
+                    {
+                        System.out.println("You are deleting Clients");
+                        System.out.println("Enter id:");
+                        int id=consoleScanner.nextInt();//exception what if there isnt client with this id
+
+                        ClientDaoInteface clientDao = new ClientDao();
+                        clientDao.delete(id);
+
+                    }
+                    else if(choose==2)
+                    {
+                        System.out.println("You are deleting Accounts");
+                        System.out.println("Enter id:");
+                        int id=consoleScanner.nextInt();//exception what if there isnt account with this id
+
+                        AccountDaoInteface accountDao= new AccountDao();
+                        accountDao.delete(id);
+
+                    }
+
+                    //Numbers cant be decremented-it will generate problems with unique keys
                     break;
                 }
 
                 case 3:
                 {
-                    //Not implemented
+                    System.out.println("Choose 1 to update Clients or choose 2 to update Accounts");
+                    choose=consoleScanner.nextInt();
+
+                    if(choose==1)
+                    {
+                        System.out.println("You are updating Client");
+                        System.out.println("Enter id:");
+                        int id=consoleScanner.nextInt();//this id may not exist
+                        System.out.println("1-Updating firstName");
+                        System.out.println("2-Updating lastName");
+                        System.out.println("3-Updating  pesel");
+                        System.out.println("4-Updating e-mail");
+                        choose=consoleScanner.nextInt();
+                        String collumn=null,newValue=null;
+
+                        switch(choose)
+                        {
+                            case 1:
+                            {
+                                System.out.println("Enter new value");
+                                 newValue=consoleScanner.next();
+                                 collumn="firstName";
+                                break;
+                            }
+
+                            case 2:
+                            {
+
+                            }
+
+                            case 3:
+                            {
+
+                            }
+
+                            case 4:
+                            {
+
+                            }
+
+                            default:
+                            {
+                                System.out.println("Wrong choice");
+                                break;//?where goes break here
+                            }
+                        }
+
+                        ClientDaoInteface clientDao = new ClientDao();
+                        clientDao.update(id,newValue,collumn);
+                    }
+
+                    else if(choose==2)
+                    {
+                        System.out.println("You are updating Account");
+                    }
                     break;
                 }
 

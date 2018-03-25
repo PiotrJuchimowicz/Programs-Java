@@ -47,11 +47,70 @@ public class ClientDao implements  ClientDaoInteface
         preparedStatement.close();
         connection.close();
 
+    }
 
-        
+    public void delete(int id)throws  SQLException
+    {
+        Connection connection= ConnectionFactory.getConnection();
+        if(connection==null)
+        {
+            System.out.println("Unable to get  connection with DB");
+            return;
+        }
+
+        // SQL querry
+        String sql="DELETE FROM CLIENT WHERE ID="+id;
+
+        Statement statement=null;
+        try
+        {
+            statement=connection.createStatement();
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+            System.out.println("Unable to create statement");
+            return;
+        }
+
+        statement.executeUpdate(sql);
+        statement.close();
+        connection.close();
+    }
+
+    public void update(int id,String newValue,String whatToUpdate) throws  SQLException
+    {
+        Connection connection= ConnectionFactory.getConnection();
+        if(connection==null)
+        {
+            System.out.println("Unable to get  connection with DB");
+            return;
+        }
+
+        Statement statement=null;
+        String sql=null;
+        PreparedStatement preparedStatement =null;
+        if(whatToUpdate.toUpperCase().equals("FIRSTNAME"))
+        {
+            sql="UPDATE CLIENT SET FIRSTNAME=? WHERE ID="+id;
+        }
+
+        try
+        {
+            preparedStatement=connection.prepareStatement(sql);
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+            System.out.println("Unable to create statement");
+            return;
+        }
 
 
-
+        preparedStatement.setString(1,newValue);
+        preparedStatement.executeUpdate();
+        preparedStatement.close();
+        connection.close();
 
 
     }
