@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="15" failures="0" name="Maven.BankImplTest" time="0.006" errors="0" skipped="0">
+<testsuite tests="15" failures="0" name="Maven.BankImplTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
     <property name="java.vm.version" value="25.161-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Piotr\Desktop\Projekty Java-local rep\Java EE\Mavenn"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Piotr\Desktop\Projekty\JavaEE\Maven"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Piotr\Desktop\Projekty Java-local rep\Java EE\Mavenn"/>
+    <property name="user.dir" value="C:\Users\Piotr\Desktop\Projekty\JavaEE\Maven"/>
     <property name="java.runtime.version" value="1.8.0_161-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.5.3\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;D:\Git\cmd;C:\Users\Piotr\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\oracleXE\app\oracle\product\11.2.0\server\bin;;D:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_161\bin;D:\Git\cmd;C:\Users\Piotr\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="maven.conf" value="C:\Program Files\apache-maven-3.5.3\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -65,9 +65,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Maven.BankImplTest" name="test10" time="0.003"/>
+  <testcase classname="Maven.BankImplTest" name="test10" time="0.001"/>
   <testcase classname="Maven.BankImplTest" name="test11" time="0"/>
-  <testcase classname="Maven.BankImplTest" name="test12" time="0.003"/>
+  <testcase classname="Maven.BankImplTest" name="test12" time="0"/>
   <testcase classname="Maven.BankImplTest" name="test13" time="0"/>
   <testcase classname="Maven.BankImplTest" name="test14" time="0"/>
   <testcase classname="Maven.BankImplTest" name="test15" time="0"/>
@@ -77,7 +77,7 @@
   <testcase classname="Maven.BankImplTest" name="test4" time="0"/>
   <testcase classname="Maven.BankImplTest" name="test5" time="0"/>
   <testcase classname="Maven.BankImplTest" name="test6" time="0"/>
-  <testcase classname="Maven.BankImplTest" name="test7" time="0"/>
+  <testcase classname="Maven.BankImplTest" name="test7" time="0.002"/>
   <testcase classname="Maven.BankImplTest" name="test8" time="0"/>
-  <testcase classname="Maven.BankImplTest" name="test9" time="0"/>
+  <testcase classname="Maven.BankImplTest" name="test9" time="0.001"/>
 </testsuite>
