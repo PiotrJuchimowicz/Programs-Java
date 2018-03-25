@@ -36,7 +36,7 @@ public class App
         //  This value must be 0,when program starts
         //  I keep last clientID and accountID in file to be able to use program repeatedly
 
-        //  Tables will be already made
+        //  Tables will be  made
         //  Creating streams to files(must add streams to Account.ID)
 
 
@@ -47,7 +47,7 @@ public class App
 
 
         //number in file numberID must be 0 if it is first run of program
-        System.out.println("Click 0 if you are running program for the first time.");
+        System.out.println("Click 0 if you run this  program for the first time.");
         choose=consoleScanner.nextInt();
         //consoleScanner.nextLine();
         if(choose==0)
@@ -89,7 +89,6 @@ public class App
                     {
                         String firstName,lastName,email,PESEL;
                         System.out.println("Enter: firstName,lastName,PESEL,e-mail");
-                        consoleScanner.nextLine();
                         firstName=consoleScanner.next();
                         lastName=consoleScanner.next();
                         email=consoleScanner.next();

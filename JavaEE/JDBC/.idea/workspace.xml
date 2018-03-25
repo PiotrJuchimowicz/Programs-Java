@@ -2,108 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06d6ace4-72ae-457c-8525-3973b47ccfa6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b459b3d3-6686-461e-8d34-41b1ebf18a1a.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b459b3d3-6686-461e-8d34-41b1ebf18a1a.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b459b3d3-6686-461e-8d34-41b1ebf18a1a/storage_v2/_src_/schema/HR.CgkAAA.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/b459b3d3-6686-461e-8d34-41b1ebf18a1a/storage_v2/_src_/schema/HR.CgkAAA.meta" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_jdbc_ojdbc8_12_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DB/derby.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/db.lck" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/log/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/log/log.ctrl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/log/log1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/log/logmirror.ctrl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c10.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c101.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c111.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c121.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c130.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c141.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c150.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c161.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c171.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c180.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c191.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c1a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c1b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c1c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c1d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c1e0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c1f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c20.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c200.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c211.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c221.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c230.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c241.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c251.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c260.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c271.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c281.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c290.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c2a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c2b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c2c1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c2d0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c2e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c2f0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c300.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c31.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c311.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c321.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c331.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c340.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c351.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c361.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c371.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c380.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c391.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c3a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c3b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c3c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c3d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c3e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c3f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c400.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c41.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c411.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c421.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c430.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c441.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c451.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c461.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c470.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c481.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c490.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c4a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c4b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c4c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c4d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c4e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c51.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c60.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c71.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c81.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/c90.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/ca1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/cb1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/cc0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/cd1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/ce1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/seg0/cf0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DB/mydb/service.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/derby.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ClientDao.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/ClientDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ClientDaoInteface.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/ClientDaoInteface.java" />
+      <change beforePath="$PROJECT_DIR$/ClientID.txt" afterPath="$PROJECT_DIR$/ClientID.txt" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JDBC/App.java" afterPath="$PROJECT_DIR$/src/main/java/JDBC/App.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/DataAccessException.java" afterPath="$PROJECT_DIR$/src/main/java/exceptions/DataAccessException.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Client.java" afterPath="$PROJECT_DIR$/src/main/java/models/Client.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JDBC/ClientDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JDBC/DataAccessException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Client.class" afterPath="$PROJECT_DIR$/target/classes/models/Client.class" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -157,8 +58,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="90" column="85" lean-forward="true" selection-start-line="90" selection-start-column="85" selection-end-line="90" selection-end-column="85" />
+            <state relative-caret-position="113">
+              <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,8 +80,8 @@
       <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="81" lean-forward="true" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
+            <state relative-caret-position="260">
+              <caret line="13" column="57" lean-forward="false" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -208,7 +109,7 @@
       <file leaf-file-name="ClientDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ClientDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="55">
               <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -221,8 +122,8 @@
       <file leaf-file-name="ConnectionFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/ConnectionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -291,8 +192,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Dao/ClientDaoInteface.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dao/ClientDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JDBC/App.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b459b3d3-6686-461e-8d34-41b1ebf18a1a/console.sql" />
+        <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/JDBC/App.java" />
       </list>
     </option>
   </component>
@@ -625,7 +527,7 @@
       <workItem from="1521735509218" duration="2758000" />
       <workItem from="1521812627752" duration="592000" />
       <workItem from="1521907294320" duration="8374000" />
-      <workItem from="1521927458127" duration="10878000" />
+      <workItem from="1521927458127" duration="13354000" />
     </task>
     <servers />
   </component>
@@ -647,7 +549,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51860000" />
+    <option name="totallyTimeSpent" value="54336000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,7 +562,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -675,7 +576,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18062398" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.454844" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3316913" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16792738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12102874" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -923,14 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -943,14 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="81" lean-forward="true" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
           <folding />
         </state>
       </provider>
@@ -983,17 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ClientDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1521930972799" expanded="true" signature="587:629" ph="INSERT INTO missingValue... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/DataAccessException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -1010,10 +884,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ClientDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1521930972799" expanded="true" signature="587:629" ph="INSERT INTO missingValue... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="57" lean-forward="false" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="90" column="85" lean-forward="true" selection-start-line="90" selection-start-column="85" selection-end-line="90" selection-end-column="85" />
+        <state relative-caret-position="113">
+          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
