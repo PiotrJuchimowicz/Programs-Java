@@ -1,5 +1,7 @@
-C:\Users\Piotr\Desktop\Projekty\JavaEE\JDBC\src\main\java\JDBC\DataAccessException.java
-C:\Users\Piotr\Desktop\Projekty\JavaEE\JDBC\src\main\java\JDBC\ConnectionFactory.java
-C:\Users\Piotr\Desktop\Projekty\JavaEE\JDBC\src\main\java\JDBC\App.java
-C:\Users\Piotr\Desktop\Projekty\JavaEE\JDBC\src\main\java\JDBC\Client.java
-C:\Users\Piotr\Desktop\Projekty\JavaEE\JDBC\src\main\java\JDBC\Account.java
+C:\Users\Piotr\Desktop\Repository\JavaEE\JavaEE\JDBC\src\main\java\JDBC\DataAccessException.java
+C:\Users\Piotr\Desktop\Repository\JavaEE\JavaEE\JDBC\src\main\java\JDBC\ClientDao.java
+C:\Users\Piotr\Desktop\Repository\JavaEE\JavaEE\JDBC\src\main\java\models\Client.java
+C:\Users\Piotr\Desktop\Repository\JavaEE\JavaEE\JDBC\src\main\java\JDBC\ConnectionFactory.java
+C:\Users\Piotr\Desktop\Repository\JavaEE\JavaEE\JDBC\src\main\java\models\Account.java
+C:\Users\Piotr\Desktop\Repository\JavaEE\JavaEE\JDBC\src\main\java\JDBC\ClientDaoInteface.java
+C:\Users\Piotr\Desktop\Repository\JavaEE\JavaEE\JDBC\src\main\java\JDBC\App.java

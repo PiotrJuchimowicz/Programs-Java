@@ -1,4 +1,4 @@
-package JDBC;
+package exceptions;
 
 public class DataAccessException extends RuntimeException
 {
