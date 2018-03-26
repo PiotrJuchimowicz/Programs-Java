@@ -3,84 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f395d65-c7d2-4517-a533-82de38692a3d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/BankClient-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/BankClient/target/BankClient-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/BankClient/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/BankClient/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/Main.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/Main.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/class-use/Main.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/class-use/Main.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/package-frame.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/package-frame.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/package-summary.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/package-summary.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/package-tree.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/package-tree.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/package-use.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/Maven/package-use.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/allclasses-frame.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/allclasses-frame.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/allclasses-noframe.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/constant-values.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/constant-values.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/deprecated-list.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/deprecated-list.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/help-doc.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/help-doc.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/index-all.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/index-all.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/index.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/index.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/apidocs/overview-tree.html" afterPath="$PROJECT_DIR$/BankClient/target/site/apidocs/overview-tree.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/dependencies.html" afterPath="$PROJECT_DIR$/BankClient/target/site/dependencies.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/dependency-convergence.html" afterPath="$PROJECT_DIR$/BankClient/target/site/dependency-convergence.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/dependency-info.html" afterPath="$PROJECT_DIR$/BankClient/target/site/dependency-info.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/index.html" afterPath="$PROJECT_DIR$/BankClient/target/site/index.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/plugin-management.html" afterPath="$PROJECT_DIR$/BankClient/target/site/plugin-management.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/plugins.html" afterPath="$PROJECT_DIR$/BankClient/target/site/plugins.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/project-info.html" afterPath="$PROJECT_DIR$/BankClient/target/site/project-info.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/project-summary.html" afterPath="$PROJECT_DIR$/BankClient/target/site/project-summary.html" />
-      <change beforePath="$PROJECT_DIR$/BankClient/target/site/surefire-report.html" afterPath="$PROJECT_DIR$/BankClient/target/site/surefire-report.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/src/main/java/Maven/Bank.java" afterPath="$PROJECT_DIR$/BankCore/src/main/java/Maven/Bank.java" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/BankCore-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/BankCore/target/BankCore-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/BankCore/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/BankCore/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/BankCore/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/Account.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/Account.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/App.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/App.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/Bank.AccountIdException.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/Bank.AccountIdException.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/Bank.InsufficientFundsException.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/Bank.InsufficientFundsException.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/Bank.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/Bank.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/BankImpl.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/BankImpl.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/Account.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/Account.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/App.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/App.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/Bank.AccountIdException.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/Bank.AccountIdException.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/Bank.InsufficientFundsException.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/Bank.InsufficientFundsException.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/Bank.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/Bank.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/BankImpl.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/class-use/BankImpl.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/package-frame.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/package-frame.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/package-summary.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/package-summary.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/package-tree.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/package-tree.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/package-use.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/Maven/package-use.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/allclasses-frame.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/allclasses-frame.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/allclasses-noframe.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/constant-values.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/constant-values.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/deprecated-list.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/deprecated-list.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/help-doc.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/help-doc.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/index-all.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/index-all.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/index.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/index.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/overview-tree.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/overview-tree.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/apidocs/serialized-form.html" afterPath="$PROJECT_DIR$/BankCore/target/site/apidocs/serialized-form.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/dependencies.html" afterPath="$PROJECT_DIR$/BankCore/target/site/dependencies.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/dependency-convergence.html" afterPath="$PROJECT_DIR$/BankCore/target/site/dependency-convergence.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/dependency-info.html" afterPath="$PROJECT_DIR$/BankCore/target/site/dependency-info.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/index.html" afterPath="$PROJECT_DIR$/BankCore/target/site/index.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/plugin-management.html" afterPath="$PROJECT_DIR$/BankCore/target/site/plugin-management.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/plugins.html" afterPath="$PROJECT_DIR$/BankCore/target/site/plugins.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/project-info.html" afterPath="$PROJECT_DIR$/BankCore/target/site/project-info.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/project-summary.html" afterPath="$PROJECT_DIR$/BankCore/target/site/project-summary.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/site/surefire-report.html" afterPath="$PROJECT_DIR$/BankCore/target/site/surefire-report.html" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/surefire-reports/Maven.BankImplTest.txt" afterPath="$PROJECT_DIR$/BankCore/target/surefire-reports/Maven.BankImplTest.txt" />
-      <change beforePath="$PROJECT_DIR$/BankCore/target/surefire-reports/TEST-Maven.BankImplTest.xml" afterPath="$PROJECT_DIR$/BankCore/target/surefire-reports/TEST-Maven.BankImplTest.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/target/site/dependencies.html" afterPath="$PROJECT_DIR$/target/site/dependencies.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/dependency-convergence.html" afterPath="$PROJECT_DIR$/target/site/dependency-convergence.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/dependency-info.html" afterPath="$PROJECT_DIR$/target/site/dependency-info.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/index.html" afterPath="$PROJECT_DIR$/target/site/index.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/modules.html" afterPath="$PROJECT_DIR$/target/site/modules.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/plugin-management.html" afterPath="$PROJECT_DIR$/target/site/plugin-management.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/plugins.html" afterPath="$PROJECT_DIR$/target/site/plugins.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/project-info.html" afterPath="$PROJECT_DIR$/target/site/project-info.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/project-summary.html" afterPath="$PROJECT_DIR$/target/site/project-summary.html" />
-      <change beforePath="$PROJECT_DIR$/target/site/surefire-report.html" afterPath="$PROJECT_DIR$/target/site/surefire-report.html" />
+      <change beforePath="$PROJECT_DIR$/BankCore/src/main/java/Maven/BankImpl.java" afterPath="$PROJECT_DIR$/BankCore/src/main/java/Maven/BankImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -98,7 +21,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="484">
               <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding />
             </state>
@@ -118,7 +41,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BankClient/src/main/java/Maven/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1584">
+            <state relative-caret-position="264">
               <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
@@ -187,13 +110,13 @@
       <file leaf-file-name="BankImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BankCore/src/main/java/Maven/BankImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="220">
+              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
               <folding>
-                <element signature="e#3190#3191#0" expanded="true" />
-                <element signature="e#3217#3218#0" expanded="true" />
-                <element signature="e#3258#3259#0" expanded="true" />
-                <element signature="e#3287#3288#0" expanded="true" />
+                <element signature="e#3192#3193#0" expanded="true" />
+                <element signature="e#3219#3220#0" expanded="true" />
+                <element signature="e#3260#3261#0" expanded="true" />
+                <element signature="e#3289#3290#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,13 +154,13 @@
       <list>
         <option value="$PROJECT_DIR$/BankCore/pom.xml" />
         <option value="$PROJECT_DIR$/BankCore/src/main/java/Maven/Account.java" />
-        <option value="$PROJECT_DIR$/BankCore/src/main/java/Maven/BankImpl.java" />
         <option value="$PROJECT_DIR$/BankClient/src/main/java/Maven/App.java" />
         <option value="$PROJECT_DIR$/BankClient/src/main/java/Maven/Main.java" />
         <option value="$PROJECT_DIR$/BankClient/pom.xml" />
         <option value="$PROJECT_DIR$/BankCore/src/test/java/Maven/BankImplTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/BankCore/src/main/java/Maven/Bank.java" />
+        <option value="$PROJECT_DIR$/BankCore/src/main/java/Maven/BankImpl.java" />
       </list>
     </option>
   </component>
@@ -259,7 +182,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -281,8 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -359,6 +280,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -549,7 +472,8 @@
       <workItem from="1521478857045" duration="691000" />
       <workItem from="1521647189985" duration="572000" />
       <workItem from="1521724353004" duration="46000" />
-      <workItem from="1522003034799" duration="1051000" />
+      <workItem from="1522003034799" duration="1052000" />
+      <workItem from="1522005653148" duration="613000" />
     </task>
     <servers />
   </component>
@@ -559,10 +483,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6519000" />
+    <option name="totallyTimeSpent" value="7133000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -576,7 +500,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20202559" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20415778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -708,10 +632,10 @@
         <state relative-caret-position="88">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#3190#3191#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3258#3259#0" expanded="true" />
-            <element signature="e#3287#3288#0" expanded="true" />
+            <element signature="e#3192#3193#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3260#3261#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -789,10 +713,10 @@
         <state relative-caret-position="80">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#3190#3191#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3258#3259#0" expanded="true" />
-            <element signature="e#3287#3288#0" expanded="true" />
+            <element signature="e#3192#3193#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3260#3261#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,10 +809,10 @@
         <state relative-caret-position="88">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#3190#3191#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3258#3259#0" expanded="true" />
-            <element signature="e#3287#3288#0" expanded="true" />
+            <element signature="e#3192#3193#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3260#3261#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -997,10 +921,10 @@
         <state relative-caret-position="88">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#3190#3191#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3258#3259#0" expanded="true" />
-            <element signature="e#3287#3288#0" expanded="true" />
+            <element signature="e#3192#3193#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3260#3261#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1050,7 +974,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="484">
           <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding />
         </state>
@@ -1058,7 +982,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BankClient/src/main/java/Maven/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1584">
+        <state relative-caret-position="264">
           <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding />
         </state>
@@ -1101,13 +1025,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BankCore/src/main/java/Maven/BankImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="220">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
           <folding>
-            <element signature="e#3190#3191#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3258#3259#0" expanded="true" />
-            <element signature="e#3287#3288#0" expanded="true" />
+            <element signature="e#3192#3193#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3260#3261#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
           </folding>
         </state>
       </provider>
