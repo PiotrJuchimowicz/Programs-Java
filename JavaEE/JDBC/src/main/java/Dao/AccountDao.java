@@ -76,4 +76,33 @@ public class AccountDao implements  AccountDaoInteface
         statement.close();
         connection.close();
     }
+
+    public void update(int id,Object newValue,String whatToUpdate)
+    {
+        Connection connection=ConnectionFactory.getConnection();
+
+        if(connection==null)
+        {
+            System.out.println("Unable to get  connection with DB");
+            return;
+        }
+
+        String sql=null;
+        PreparedStatement preparedStatement=null;
+
+        if(newValue instanceof Long)
+        {
+            long balance= (Long) newValue;
+
+            sql="UPDATE Account SET Balance=? WHERE ID="+id;
+
+        }
+
+        else if(newValue instanceof  String)
+        {
+
+        }
+
+
+    }
 }

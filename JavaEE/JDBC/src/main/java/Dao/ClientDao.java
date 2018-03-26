@@ -87,12 +87,25 @@ public class ClientDao implements  ClientDaoInteface
             return;
         }
 
-        Statement statement=null;
+
         String sql=null;
         PreparedStatement preparedStatement =null;
         if(whatToUpdate.toUpperCase().equals("FIRSTNAME"))
         {
             sql="UPDATE CLIENT SET FIRSTNAME=? WHERE ID="+id;
+        }
+        else  if(whatToUpdate.toUpperCase().equals("LASTNAME"))
+        {
+            sql="UPDATE CLIENT SET LASTNAME=? WHERE ID="+id;
+        }
+
+        else  if(whatToUpdate.toUpperCase().equals("PESEL"))
+        {
+            sql="UPDATE CLIENT SET PESEL=? WHERE ID="+id;
+        }
+        else  if(whatToUpdate.toUpperCase().equals("EMAIL"))
+        {
+            sql="UPDATE CLIENT SET EMAIL=? WHERE ID="+id;
         }
 
         try
