@@ -2,11 +2,10 @@ package Dao;
 
 import JDBC.ConnectionFactory;
 import models.Account;
+import models.Client;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.LinkedList;
 
 public class AccountDao implements  AccountDaoInteface
 {
@@ -138,5 +137,71 @@ public class AccountDao implements  AccountDaoInteface
         connection.close();
 
 
+    }
+
+    public Account findOne(int id) throws  SQLException
+    {
+        Connection connection = ConnectionFactory.getConnection();
+        if (connection == null) {
+            System.out.println("Unable to get  connection with DB");
+            return null;
+        }
+
+        Statement statement = connection.createStatement();
+        String sql = "Select * From ACCOUNT Where id=" + id;
+
+        ResultSet resultSet = statement.executeQuery(sql);
+
+        Account account=null;
+
+        //Movies cursor to the first row
+        if (resultSet.next()) {
+            int accountId=resultSet.getInt("ID");
+            String accountNotes=resultSet.getString("NOTES");
+            long accountBalance = resultSet.getLong("BALANCE");
+            int accountForeignKey=resultSet.getInt("ID_CLIENT");
+
+            resultSet.close();
+            connection.close();
+
+            account=new Account(accountId,accountNotes,accountBalance,accountForeignKey);
+
+
+        }
+        return account;
+    }
+
+    public LinkedList<Account> findAll() throws  SQLException
+    {
+        Connection connection= ConnectionFactory.getConnection();
+        if(connection==null)
+        {
+            System.out.println("Unable to get  connection with DB");
+            return null;
+        }
+
+        Statement statement=connection.createStatement();
+        String sql="Select * From ACCOUNT";
+
+        ResultSet resultSet=statement.executeQuery(sql);
+
+        LinkedList<Account> list = new LinkedList<>();
+
+        while ((resultSet.next()))
+        {
+            int accountId=resultSet.getInt("ID");
+            String accountNotes=resultSet.getString("NOTES");
+            long accountBalance = resultSet.getLong("BALANCE");
+            int accountForeignKey=resultSet.getInt("ID_CLIENT");
+
+             Account account=new Account(accountId,accountNotes,accountBalance,accountForeignKey);
+
+            list.add(account);
+        }
+
+        resultSet.close();
+        connection.close();
+
+        return  list;
     }
 }

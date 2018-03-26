@@ -12,6 +12,7 @@ public class Client
 
     }
 
+    //For saving in DB
     public Client( String firstName, String lastName, String pesel, String email)
     {
         this.id = number;
@@ -20,6 +21,16 @@ public class Client
         this.pesel = pesel;
         this.email = email;
 
+    }
+
+    //For finding from DB
+    public Client(int id,String firstName,String lastName,String pesel,String email)
+    {
+        this.id=id;
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.pesel=pesel;
+        this.email=email;
     }
 
     public int getId() {

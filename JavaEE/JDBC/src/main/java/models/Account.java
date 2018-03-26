@@ -13,11 +13,21 @@ public class Account
 
     }
 
+    //For saving data ind DB
     public Account( String notes, long balance, int id_client) {
         this.id = number;
         this.notes = notes;
         this.balance = balance;
         this.id_client = id_client;
+    }
+
+    //For selecting data from DB
+    public Account(int id,String notes,long balance,int id_client)
+    {
+        this.id=id;
+        this.notes=notes;
+        this.balance=balance;
+        this.id_client=id_client;
     }
 
     public int getId() {
@@ -59,5 +69,15 @@ public class Account
 
     public static void setNumber(int n) {
         number = n;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", notes='" + notes + '\'' +
+                ", balance=" + balance +
+                ", id_client=" + id_client +
+                '}';
     }
 }

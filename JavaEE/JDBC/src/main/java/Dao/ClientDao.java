@@ -3,16 +3,16 @@ package Dao;
 import JDBC.ConnectionFactory;
 import models.Client;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ClientDao implements  ClientDaoInteface
 {
     public void save(Client t) throws  SQLException
     {
+
         Connection connection= ConnectionFactory.getConnection();
         if(connection==null)
         {
@@ -42,7 +42,9 @@ public class ClientDao implements  ClientDaoInteface
         preparedStatement.setString(5,t.getEmail() );
 
         // execute insert SQL stetement
+
         preparedStatement.executeUpdate();
+
 
         preparedStatement.close();
         connection.close();
@@ -124,6 +126,79 @@ public class ClientDao implements  ClientDaoInteface
         preparedStatement.executeUpdate();
         preparedStatement.close();
         connection.close();
+
+
+    }
+
+    public Client findOne(int id) throws  SQLException {
+        Connection connection = ConnectionFactory.getConnection();
+        if (connection == null) {
+            System.out.println("Unable to get  connection with DB");
+            return null;
+        }
+
+
+        Statement statement = connection.createStatement();
+        String sql = "Select * From Client Where id=" + id;
+
+        ResultSet resultSet = statement.executeQuery(sql);
+
+        Client client=null;
+
+        //Movies cursor to the first row
+        if (resultSet.next()) {
+            int clientId = resultSet.getInt("ID");
+            String clientFirstName = resultSet.getString("FIRSTNAME");
+            String clientLastName = resultSet.getString("LASTNAME");
+            String clientPesel = resultSet.getString("PESEL");
+            String clientEmail = resultSet.getString("EMAIL");
+
+            resultSet.close();
+            connection.close();
+
+            client = new Client(clientId, clientFirstName, clientLastName, clientPesel, clientEmail);//exceptions!
+
+
+        }
+        return client;
+    }
+
+
+
+
+    public LinkedList<Client> findAll()throws SQLException
+    {
+        Connection connection= ConnectionFactory.getConnection();
+        if(connection==null)
+        {
+            System.out.println("Unable to get  connection with DB");
+            return null;
+        }
+
+        Statement statement=connection.createStatement();
+        String sql="Select * From Client";
+
+        ResultSet resultSet=statement.executeQuery(sql);
+
+        LinkedList<Client> list = new LinkedList<>();
+
+        while ((resultSet.next()))
+        {
+            int clientId = resultSet.getInt("ID");
+            String clientFirstName = resultSet.getString("FIRSTNAME");
+            String clientLastName = resultSet.getString("LASTNAME");
+            String clientPesel = resultSet.getString("PESEL");
+            String clientEmail = resultSet.getString("EMAIL");
+
+            Client client= new Client(clientId,clientFirstName,clientLastName,clientPesel,clientEmail);//exceptions!
+
+            list.add(client);
+        }
+
+        resultSet.close();
+        connection.close();
+
+        return  list;
 
 
     }
