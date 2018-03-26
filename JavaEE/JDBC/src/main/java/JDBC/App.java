@@ -16,6 +16,8 @@ package JDBC;
  id_client INTEGER CONSTRAINT fk_client REFERENCES Client(ID) );
  */
 
+//Uniwersalnosc -interfejsy
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.sql.*;

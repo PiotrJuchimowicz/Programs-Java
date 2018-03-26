@@ -77,7 +77,7 @@ public class AccountDao implements  AccountDaoInteface
         connection.close();
     }
 
-    public void update(int id,Object newValue,String whatToUpdate)
+    public void update(int id,Object newValue,String whatToUpdate)throws  SQLException
     {
         Connection connection=ConnectionFactory.getConnection();
 
@@ -93,15 +93,49 @@ public class AccountDao implements  AccountDaoInteface
         if(newValue instanceof Long)
         {
             long balance= (Long) newValue;
-
             sql="UPDATE Account SET Balance=? WHERE ID="+id;
+
+            try
+            {
+                preparedStatement=connection.prepareStatement(sql);
+            }
+
+            catch(SQLException e)
+            {
+                e.printStackTrace();
+                System.out.println("Unable to create statement");
+                return;
+            }
+
+            preparedStatement.setLong(1,balance);
+
 
         }
 
         else if(newValue instanceof  String)
         {
+            String notes= (String)newValue;
+            sql="UPDATE Account SET NOTES=? WHERE ID="+id;
+
+            try
+            {
+                preparedStatement=connection.prepareStatement(sql);
+            }
+
+            catch(SQLException e)
+            {
+                e.printStackTrace();
+                System.out.println("Unable to create statement");
+                return;
+            }
+
+            preparedStatement.setString(1,notes);
 
         }
+
+        preparedStatement.executeUpdate();
+        preparedStatement.close();
+        connection.close();
 
 
     }
