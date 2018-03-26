@@ -21,7 +21,7 @@ public class Main
     Scanner scanner = new Scanner(System.in);
     String name,address;
     int choose;
-    BankImpl bank = new BankImpl();
+    Bank bank = new BankImpl();
     do {
         try {
 
