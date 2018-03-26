@@ -49,7 +49,7 @@ public class Main
                     int numberNow=BankImpl.getNumber();
                     logger.log(Level.FINE, "Wywołano metody createAccount  oraz findAccount z parametrami  {0} , {1} ",tab);
                     //Jesli utworzono nowe konto to zmienna number musiala ulec zmianie
-                    //Uzyje tego do sprawdzenia czy stworzono nowe konto
+                    //Uzyteczne przy sprawdzaniu czy utworzono nowe konto
 
 
                     if(numberNow==numberBefore)

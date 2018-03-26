@@ -33,8 +33,7 @@ public class BankImplTest
     }
 
     //Testy dla metody  createAccount
-    //Sprawdza czy prawidłowo dodano konto.Myślę że atomowość jest ok.
-    //Testy odpalaja się w różnej kolejności,nie mozna porownywac do pol ktore moga ulec zmianie przez te testy
+    //Sprawdza czy prawidłowo dodano konto.
     @Test
     public void test3()
     {
@@ -57,7 +56,7 @@ public class BankImplTest
     @Test
     public void test5()
     {
-        //Moglem tez porownac przez assert po prostu.
+
         assertEquals("Niepoprawne id",1,bank.findAccount("Michał Kuc","Białystok"),0);
 
     }
