@@ -25,6 +25,7 @@ import java.util.*;
 import java.io.*;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
+import exceptions.DataAccessException;
 import models.*;
 import  Dao.*;
 public class App 
@@ -65,7 +66,7 @@ public class App
 
        }
 
-       //reading actual clientID
+        //reading actual clientID
         Scanner fileScanner = new Scanner(new File("ClientID.txt"));
         //Reading actual clientID from file
         String actualID=fileScanner.next();
@@ -86,23 +87,23 @@ public class App
 
         do {
 
+            try{
+
+
             System.out.println("Select one: ");
             System.out.println("1-Save data in table.");
             System.out.println("2-Delete data from table.");
             System.out.println("3-Update data in table.");
             System.out.println("4-Find data from table.");
-            System.out.println("5-Your own query.");
-            System.out.println("6-Close program.");
+            System.out.println("5-Close program.");
 
-            choose=consoleScanner.nextInt();
+            choose = consoleScanner.nextInt();
 
-            switch (choose)
-            {
-                case 1:
-                {
+            switch (choose) {
+                case 1: {
                     System.out.println("Click 1 to add client or 2 to add account");
-                    choose=consoleScanner.nextInt();
-                    if(choose==1) {
+                    choose = consoleScanner.nextInt();
+                    if (choose == 1) {
                         System.out.println("You are now adding Client");
 
 
@@ -116,73 +117,74 @@ public class App
                         Client c = new Client(firstName, lastName, email, PESEL);
 
                         ClientDaoInteface clientDao = new ClientDao();
-                        clientDao.save(c);
+                        try
+                        {
+                            clientDao.save(c);
+                        }
+                        catch(DataAccessException e)
+                        {
+                            break;
+                        }
 
                         //Incrementing number to make next person unique
                         Client.setNumber(Client.getNumber() + 1);
 
 
                     }
-                    else if(choose==2)//There may be client with many accounts
+                    else if (choose == 2)//There may be client with many accounts
                     {
                         System.out.println("You are now adding Account");
                         System.out.println("Enter the client id");
-                        int id=consoleScanner.nextInt();
+                        int id = consoleScanner.nextInt();
 
                         //It may not be someone with that id-exception!
                         System.out.println("Enter: Notes,Balance");
                         //exceptions!
-                        String notes=consoleScanner.next();
+                        String notes = consoleScanner.next();
                         consoleScanner.nextLine();
 
-                        long balance=consoleScanner.nextLong();
+                        long balance = consoleScanner.nextLong();
 
-                        Account a = new Account(notes,balance,id);
+                        Account a = new Account(notes, balance, id);
 
-                        AccountDaoInteface accountDao= new AccountDao();
-                        accountDao.save(a);
-
-
-
-
+                        AccountDaoInteface accountDao = new AccountDao();
+                        try {
+                            accountDao.save(a);
+                        }
+                        catch(DataAccessException e)
+                        {
+                            break;
+                        }
 
 
                         //Incremeting number to make next person unique
-                        Account.setNumber(Account.getNumber()+1);
+                        Account.setNumber(Account.getNumber() + 1);
 
 
                     }
 
 
-                        break;
-                    }
+                    break;
+                }
 
 
-
-
-
-
-                case 2:
-                {
+                case 2: {
                     System.out.println("Choose 1 to delete Clients or 2 to delete Accounts.");//cant update keys
-                    choose=consoleScanner.nextInt();//exceptions,what is choose ==3
-                    if(choose==1)
-                    {
+                    choose = consoleScanner.nextInt();//exceptions,what is choose ==3
+                    if (choose == 1) {
                         System.out.println("You are deleting Clients");
                         System.out.println("Enter client  id:");
-                        int id=consoleScanner.nextInt();//exception what if there isnt client with this id
+                        int id = consoleScanner.nextInt();//exception what if there isnt client with this id
 
                         ClientDaoInteface clientDao = new ClientDao();
                         clientDao.delete(id);
 
-                    }
-                    else if(choose==2)
-                    {
+                    } else if (choose == 2) {
                         System.out.println("You are deleting Accounts");
                         System.out.println("Enter account  id:");
-                        int id=consoleScanner.nextInt();//exception what if there isnt account with this id
+                        int id = consoleScanner.nextInt();//exception what if there isnt account with this id
 
-                        AccountDaoInteface accountDao= new AccountDao();
+                        AccountDaoInteface accountDao = new AccountDao();
                         accountDao.delete(id);
 
                     }
@@ -191,55 +193,47 @@ public class App
                     break;
                 }
 
-                case 3:
-                {
+                case 3: {
                     System.out.println("Choose 1 to update Clients or choose 2 to update Accounts");
-                    choose=consoleScanner.nextInt();
+                    choose = consoleScanner.nextInt();
                     int id;
-                    if(choose==1)
-                    {
+                    if (choose == 1) {
                         System.out.println("You are updating Client");
                         System.out.println("Enter client  id:");
-                         id=consoleScanner.nextInt();//this id may not exist
+                        id = consoleScanner.nextInt();//this id may not exist
                         System.out.println("1-Update firstName");
                         System.out.println("2-Update lastName");
                         System.out.println("3-Update  pesel");
                         System.out.println("4-Update e-mail");
-                        choose=consoleScanner.nextInt();
-                        String collumn=null,newValue=null;
+                        choose = consoleScanner.nextInt();
+                        String collumn = null, newValue = null;
 
-                        switch(choose)
-                        {
-                            case 1:
-                            {
+                        switch (choose) {
+                            case 1: {
 
-                                 collumn="firstName";
+                                collumn = "firstName";
                                 break;
                             }
 
-                            case 2:
-                            {
+                            case 2: {
 
-                                collumn="lastName";
+                                collumn = "lastName";
                                 break;
                             }
 
-                            case 3:
-                            {
+                            case 3: {
 
-                                collumn="pesel";
+                                collumn = "pesel";
                                 break;
                             }
 
-                            case 4:
-                            {
+                            case 4: {
 
-                                collumn="email";
+                                collumn = "email";
                                 break;
                             }
 
-                            default:
-                            {
+                            default: {
                                 System.out.println("Wrong choice");
                                 break;//?where goes break here
                             }
@@ -247,40 +241,34 @@ public class App
                         }
 
                         System.out.println("Enter new value");
-                        newValue=consoleScanner.next();
+                        newValue = consoleScanner.next();
                         ClientDaoInteface clientDao = new ClientDao();
-                        clientDao.update(id,newValue,collumn);
-                    }
-
-                    else if(choose==2)
-                    {
+                        clientDao.update(id, newValue, collumn);
+                    } else if (choose == 2) {
                         System.out.println("You are updating Account");
                         System.out.println("Enter account id:");
-                        id=consoleScanner.nextInt();//this id may not exist
+                        id = consoleScanner.nextInt();//this id may not exist
                         System.out.println("1-Update notes");
                         System.out.println("2-Update balance");
-                        choose=consoleScanner.nextInt();
-                        String collumn=null;
+                        choose = consoleScanner.nextInt();
+                        String collumn = null;
 
-                        switch (choose)
-                        {
-                            case 1:
-                            {
-                                collumn="notes";
+                        switch (choose) {
+                            case 1: {
+                                collumn = "notes";
                                 System.out.println("Enter new value");
-                                String newValue=consoleScanner.next();
-                                AccountDaoInteface accountDao=new AccountDao();
-                                accountDao.update(id,newValue,collumn);
+                                String newValue = consoleScanner.next();
+                                AccountDaoInteface accountDao = new AccountDao();
+                                accountDao.update(id, newValue, collumn);
                                 break;
                             }
 
-                            case 2:
-                            {
-                                collumn="balance";
+                            case 2: {
+                                collumn = "balance";
                                 System.out.println("Enter new value");
-                                Long newValue=consoleScanner.nextLong();
-                                AccountDaoInteface accountDao=new AccountDao();
-                                accountDao.update(id,newValue,collumn);
+                                Long newValue = consoleScanner.nextLong();
+                                AccountDaoInteface accountDao = new AccountDao();
+                                accountDao.update(id, newValue, collumn);
                                 break;
                             }
                         }
@@ -289,100 +277,81 @@ public class App
                     break;
                 }
 
-                case 4:
-                {
+                case 4: {
                     System.out.println("1-Find clients");
                     System.out.println("2-Find accounts");
-                    choose=consoleScanner.nextInt();
-                    int variable,id;
+                    choose = consoleScanner.nextInt();
+                    int variable, id;
 
-                    switch (choose)
-                    {
-                        case 1:
-                        {
+                    switch (choose) {
+                        case 1: {
 
                             System.out.println("1-Find one client");
                             System.out.println("2-Find all clients");
-                            variable=consoleScanner.nextInt();
+                            variable = consoleScanner.nextInt();
 
-                            switch (variable)
-                            {
-                                case 1:
-                                {
+                            switch (variable) {
+                                case 1: {
                                     System.out.println("Enter client  id");
-                                    id=consoleScanner.nextInt();
-                                     ClientDaoInteface clientDao= new ClientDao();
-                                     Client client =clientDao.findOne(id);
-                                     if(client==null)
-                                         System.out.println("error");//exceptions!
+                                    id = consoleScanner.nextInt();
+                                    ClientDaoInteface clientDao = new ClientDao();
+                                    Client client = clientDao.findOne(id);
+                                    if (client == null)
+                                        System.out.println("error");//exceptions!
                                     else
-                                         System.out.println(client.toString());
+                                        System.out.println(client.toString());
                                     break;
                                 }
 
-                                case 2:
-                                {
+                                case 2: {
 
-                                    ClientDaoInteface clientDao= new ClientDao();
-                                   LinkedList<Client> list  =clientDao.findAll();
+                                    ClientDaoInteface clientDao = new ClientDao();
+                                    LinkedList<Client> list = clientDao.findAll();
 
 
-                                   if(list==null)
-                                   {
-                                       System.out.println("error");
-                                   }
-                                   else
-                                   {
+                                    if (list == null) {
+                                        System.out.println("error");
+                                    } else {
 
-                                       for(Client  c : list)
-                                           System.out.println(c.toString());
+                                        for (Client c : list)
+                                            System.out.println(c.toString());
 
-                                   }
+                                    }
                                     break;
                                 }
                             }
                             break;
                         }
 
-                        case 2:
-                        {
+                        case 2: {
                             System.out.println("1-Find one account");
                             System.out.println("2-Find all accounts");
-                            variable=consoleScanner.nextInt();
+                            variable = consoleScanner.nextInt();
 
-                            switch (variable)
-                            {
-                                case 1:
-                                {
+                            switch (variable) {
+                                case 1: {
                                     System.out.println("Enter  account id");
-                                    id=consoleScanner.nextInt();
-                                    AccountDaoInteface accountDao=new AccountDao();
-                                    Account account=accountDao.findOne(id);
+                                    id = consoleScanner.nextInt();
+                                    AccountDaoInteface accountDao = new AccountDao();
+                                    Account account = accountDao.findOne(id);
 
-                                    if(account==null)
-                                    {
+                                    if (account == null) {
                                         System.out.println("error");//excetions
 
-                                    }
-
-                                    else
+                                    } else
                                         System.out.println(account.toString());
                                     break;
                                 }
 
-                                case 2:
-                                {
-                                    AccountDaoInteface accountDao=new AccountDao();
-                                    LinkedList<Account> list=accountDao.findAll();
+                                case 2: {
+                                    AccountDaoInteface accountDao = new AccountDao();
+                                    LinkedList<Account> list = accountDao.findAll();
 
-                                    if(list==null)
-                                    {
+                                    if (list == null) {
                                         System.out.println("error");
-                                    }
-                                    else
-                                    {
+                                    } else {
 
-                                        for(Account a : list)
+                                        for (Account a : list)
                                             System.out.println(a.toString());
 
                                     }
@@ -395,94 +364,52 @@ public class App
                     }
                     break;
                 }
-                case 5:
-                {
-                    //Not implemented
-                    break;
-                }
-                case 6:
-                {
+
+                case 5: {
                     System.out.println("Bye!");
 
                     consoleScanner.close();
                     //Must save actual numbers (client and account)
                     //Saving actual number of clients
-                    PrintWriter printWriter =new PrintWriter("ClientID.txt");
+                    PrintWriter printWriter = new PrintWriter("ClientID.txt");
                     printWriter.print(Client.getNumber());
                     printWriter.close();
 
                     //Saving for account
-                    PrintWriter printWriter1=new PrintWriter("AccountID.txt");
+                    PrintWriter printWriter1 = new PrintWriter("AccountID.txt");
                     printWriter1.print(Account.getNumber());
                     printWriter1.close();
                     return;
                 }
-                default:
-                {
+                default: {
                     System.out.println("Incorrect choice.");
                     break;
                 }
             }
 
+        }
+
+        catch(InputMismatchException e)
+        {
+            e.printStackTrace();
+            System.out.println("Incorrect input data");
+        }
+
+        catch (NullPointerException e)
+        {
+            e.printStackTrace();
+            System.out.println("Error");
+        }
+
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            System.out.println("Other error");
+        }
 
         }
         while(true);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-        try
-        {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-
-        }
-        catch(ClassNotFoundException ex)
-        {
-            System.out.println("Unable to load driver.");
-            System.exit(1);
-        }
-
-        Connection connection = null;
-
-        String URL = "jdbc:oracle:thin:@localhost:1521:XE";
-        String USER = "hr";
-        String PASS = "hr";
-
-        try
-        {
-            connection = DriverManager.getConnection(URL, USER, PASS);
-        }
-
-        catch(SQLException e)
-        {
-            System.out.println("Error");
-            e.printStackTrace();
-        }
-
-        Statement statement =connection.createStatement();
-        ResultSet rs=statement.executeQuery("select * from JOBS");
-
-        while(rs.next()){
-            System.out.println(rs.getString(1));
-        }
-
-        connection.close();
-
-*/
     }
-
 }
 
 

@@ -1,8 +1,10 @@
 package Dao;
 
 import JDBC.ConnectionFactory;
+import exceptions.DataAccessException;
 import models.Client;
 
+import javax.xml.crypto.Data;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
@@ -17,7 +19,7 @@ public class ClientDao implements  ClientDaoInteface
         if(connection==null)
         {
             System.out.println("Unable to get  connection with DB");
-            return;
+            throw  new DataAccessException();
         }
         //  SQL query
         String sql="INSERT INTO " +"CLIENT"+ " VALUES (?,?,?,?,?)";
@@ -29,9 +31,9 @@ public class ClientDao implements  ClientDaoInteface
 
         catch (SQLException e)
         {
-            e.printStackTrace();
+
             System.out.println("Unable to create statement");
-            return;
+            throw new DataAccessException(e);
         }
 
         // data preparation
@@ -43,7 +45,15 @@ public class ClientDao implements  ClientDaoInteface
 
         // execute insert SQL stetement
 
-        preparedStatement.executeUpdate();
+        try {
+            preparedStatement.executeUpdate();
+        }
+        catch(SQLException e)
+        {
+
+            System.out.println("Unable to execute query");
+            throw new DataAccessException(e);
+        }
 
 
         preparedStatement.close();
@@ -75,7 +85,15 @@ public class ClientDao implements  ClientDaoInteface
             return;
         }
 
-        statement.executeUpdate(sql);
+        try {
+            statement.executeUpdate(sql);
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+            System.out.println("Unable to execute query");
+            return;
+        }
         statement.close();
         connection.close();
     }
@@ -123,7 +141,16 @@ public class ClientDao implements  ClientDaoInteface
 
 
         preparedStatement.setString(1,newValue);
-        preparedStatement.executeUpdate();
+
+        try {
+            preparedStatement.executeUpdate();
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+            System.out.println("Unable to execute query");
+            return;
+        }
         preparedStatement.close();
         connection.close();
 
@@ -141,7 +168,16 @@ public class ClientDao implements  ClientDaoInteface
         Statement statement = connection.createStatement();
         String sql = "Select * From Client Where id=" + id;
 
-        ResultSet resultSet = statement.executeQuery(sql);
+        ResultSet resultSet=null;
+        try {
+             resultSet = statement.executeQuery(sql);
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+            System.out.println("Unable to execute query");
+            return null;
+        }
 
         Client client=null;
 
@@ -178,7 +214,18 @@ public class ClientDao implements  ClientDaoInteface
         Statement statement=connection.createStatement();
         String sql="Select * From Client";
 
-        ResultSet resultSet=statement.executeQuery(sql);
+        ResultSet resultSet=null;
+
+        try {
+            resultSet = statement.executeQuery(sql);
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+            System.out.println("Unable to execute query");
+            return null;
+        }
+
 
         LinkedList<Client> list = new LinkedList<>();
 
