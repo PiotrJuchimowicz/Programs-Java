@@ -25,7 +25,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
   <dependencies>
       <!-- https://mvnrepository.com/artifact/junit/junit -->
       <dependency>
@@ -34,19 +33,10 @@
           <version>4.12</version>
           <scope>test</scope>
       </dependency>
-
       <dependency>
-
           <groupId>com.oracle</groupId>
           <artifactId>ojdbc14</artifactId>
           <version>10.2.0.4.0</version>
       </dependency>
-
-
-
-
-
-
-
   </dependencies>
 </project>
