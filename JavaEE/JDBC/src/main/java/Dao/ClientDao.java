@@ -22,7 +22,7 @@ public class ClientDao implements  ClientDaoInteface
             throw  new DataAccessException();
         }
         //  SQL query
-        String sql="INSERT INTO " +"CLIENT"+ " VALUES (?,?,?,?,?)";
+        String sql="INSERT INTO " +"CLIENT"+ " VALUES (DEFAULT ,?,?,?,?)";
         PreparedStatement preparedStatement=null;
         try
         {
@@ -37,16 +37,18 @@ public class ClientDao implements  ClientDaoInteface
         }
 
         // data preparation
-        preparedStatement.setInt(1,t.getId() );
-        preparedStatement.setString(2,t.getFirstName() );
-        preparedStatement.setString(3,t.getLastName() );
-        preparedStatement.setString(4,t.getPesel() );
-        preparedStatement.setString(5,t.getEmail() );
+        preparedStatement.setString(1,t.getFirstName() );
+        preparedStatement.setString(2,t.getLastName() );
+        preparedStatement.setString(3,t.getPesel() );
+        preparedStatement.setString(4,t.getEmail() );
 
         // execute insert SQL stetement
 
         try {
+
             preparedStatement.executeUpdate();
+
+
         }
         catch(SQLException e)
         {
@@ -61,7 +63,7 @@ public class ClientDao implements  ClientDaoInteface
 
     }
 
-    public void delete(int id)throws  SQLException
+    public void delete(int identity)throws  SQLException
     {
         Connection connection= ConnectionFactory.getConnection();
         if(connection==null)
@@ -71,12 +73,12 @@ public class ClientDao implements  ClientDaoInteface
         }
 
         // SQL querry
-        String sql="DELETE FROM CLIENT WHERE ID="+id;
+        String sql="DELETE  FROM  CLIENT Where ID = ? ";
 
-        Statement statement=null;
+        PreparedStatement statement=null;
         try
         {
-            statement=connection.createStatement();
+            statement=connection.prepareStatement(sql);
         }
         catch (SQLException e)
         {
@@ -84,9 +86,12 @@ public class ClientDao implements  ClientDaoInteface
             System.out.println("Unable to create statement");
             return;
         }
-
+        statement.setInt(1,identity );
         try {
-            statement.executeUpdate(sql);
+
+            statement.executeUpdate();
+
+
         }
         catch(SQLException e)
         {

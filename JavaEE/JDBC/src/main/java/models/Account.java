@@ -6,7 +6,7 @@ public class Account
     private String notes;
     private long balance;
     private int id_client;
-    private static int number;
+
 
     public Account()
     {
@@ -14,17 +14,17 @@ public class Account
     }
 
     //For saving data ind DB
-    public Account( String notes, long balance, int id_client) {
-        this.id = number;
+    public Account( int id,String notes, long balance, int id_client)
+    {
+        this.id=id;
         this.notes = notes;
         this.balance = balance;
         this.id_client = id_client;
     }
 
     //For selecting data from DB
-    public Account(int id,String notes,long balance,int id_client)
+    public Account(String notes,long balance,int id_client)
     {
-        this.id=id;
         this.notes=notes;
         this.balance=balance;
         this.id_client=id_client;
@@ -60,15 +60,6 @@ public class Account
 
     public void setId_client(int id_client) {
         this.id_client = id_client;
-    }
-
-    public static int getNumber()
-    {
-        return number;
-    }
-
-    public static void setNumber(int n) {
-        number = n;
     }
 
     @Override

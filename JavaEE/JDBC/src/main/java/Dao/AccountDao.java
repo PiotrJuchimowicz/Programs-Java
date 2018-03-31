@@ -19,7 +19,7 @@ public class AccountDao implements  AccountDaoInteface
             throw new DataAccessException();
         }
         //  SQL query
-        String sql="INSERT INTO " +"ACCOUNT"+ " VALUES (?,?,?,?)";
+        String sql="INSERT INTO " +"ACCOUNT"+ " VALUES (DEFAULT,?,?,?)";
         PreparedStatement preparedStatement=null;
         try
         {
@@ -34,12 +34,10 @@ public class AccountDao implements  AccountDaoInteface
         }
 
         // data preparation
-        preparedStatement.setInt(1,a.getId() );
-        preparedStatement.setString(2,a.getNotes() );
-        preparedStatement.setLong(3,a.getBalance() );
+        preparedStatement.setString(1,a.getNotes() );
+        preparedStatement.setLong(2,a.getBalance() );
         //Setting foreign key
-
-        preparedStatement.setInt(4,a.getId_client() );
+        preparedStatement.setInt(3,a.getId_client() );
 
         // execute insert SQL stetement
         try {
@@ -56,7 +54,7 @@ public class AccountDao implements  AccountDaoInteface
         connection.close();
     }
 
-    public void delete(int id)throws  SQLException
+    public void delete(int identity)throws  SQLException
     {
         Connection connection= ConnectionFactory.getConnection();
         if(connection==null)
@@ -66,12 +64,12 @@ public class AccountDao implements  AccountDaoInteface
         }
 
         // SQL querry
-        String sql="DELETE FROM ACCOUNT WHERE ID="+id;
+        String sql="DELETE FROM ACCOUNT WHERE ID=?";
 
-        Statement statement=null;
+        PreparedStatement statement=null;
         try
         {
-            statement=connection.createStatement();
+            statement=connection.prepareStatement(sql);
         }
         catch (SQLException e)
         {
@@ -79,9 +77,9 @@ public class AccountDao implements  AccountDaoInteface
             System.out.println("Unable to create statement");
             return;
         }
-
+        statement.setInt(1,identity );
         try {
-            statement.executeUpdate(sql);
+            statement.executeUpdate();
         }
 
         catch(SQLException e)
