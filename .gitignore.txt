@@ -1,1 +1,2 @@
 *workskspace.xml
+*kot*
