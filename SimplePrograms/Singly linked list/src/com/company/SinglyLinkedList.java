@@ -49,7 +49,7 @@ public class SinglyLinkedList
         //first node
         if(pom==first)
         {
-            first=first.getNext();
+            first=null;
         }
         //last node
         else if(pom.getNext()==null)
@@ -60,6 +60,7 @@ public class SinglyLinkedList
         {
             Node node=pom.getNext();
             before.setNext(node);
+            pom=null;
         }
     }
 
@@ -69,7 +70,7 @@ public class SinglyLinkedList
 
         while(pom!=null)
         {
-            System.out.println(pom.getNum());
+            System.out.print(pom.getNum() + "\n");
             pom=pom.getNext();
         }
     }
