@@ -1,2 +1,1 @@
-*workskspace.xml
-*kot*
+.idea/
