@@ -1,2 +1,1 @@
-*kspace.xml
-*.a
+*workskspace.xml
