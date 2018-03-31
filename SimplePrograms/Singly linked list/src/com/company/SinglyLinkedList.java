@@ -35,11 +35,12 @@ public class SinglyLinkedList
 
         while(pom!=null)
         {
+            //Remembers  ref to two nodes
+
             if(pom.getNum()==n)
                 break;
             else
             {
-                //Remembers  ref to two nodes
                 before=pom;
                 pom=pom.getNext();
 

@@ -10,10 +10,7 @@ public class Main {
         doublyList.add(3);
         doublyList.add(4);
         doublyList.add(10);
-        doublyList.delete(10);
-        doublyList.delete(3);
-        doublyList.delete(2);
-        doublyList.delete(4);
         doublyList.show();
+
     }
 }
