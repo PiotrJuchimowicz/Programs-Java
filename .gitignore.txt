@@ -1,1 +1,1 @@
-*.xml
+C:\Users\Piotr\Desktop\Repository\Repository\SimplePrograms\workspace.xml
