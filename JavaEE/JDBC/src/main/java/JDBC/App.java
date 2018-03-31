@@ -2,6 +2,7 @@ package JDBC;
 
 /**
  Commands in Oracle XE DB
+
  CREATE TABLE Client(
  id INTEGER PRIMARY KEY ,
  firstName VARCHAR(50),
@@ -14,6 +15,30 @@ package JDBC;
  notes VARCHAR(255),
  balance NUMBER(19),
  id_client INTEGER CONSTRAINT fk_client REFERENCES Client(ID) );
+
+ Create sequence client_id_seq;
+
+ Create sequence account_id_seq;
+
+ create trigger trg_client_id
+ before insert on CLIENT
+ for each row
+ begin
+ select client_id_seq.nextval
+ into :new.id
+ from dual;
+ end;
+ /
+
+ create trigger trg_account_id
+ before insert on Account
+ for each row
+ begin
+ select accunt_id_seq.nextval
+ into :new.id
+ from dual;
+ end;
+ /
  */
 
 //Uniwersalnosc -interfejsy
