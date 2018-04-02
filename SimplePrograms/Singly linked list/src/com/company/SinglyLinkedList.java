@@ -18,6 +18,7 @@ public class SinglyLinkedList
         }
         else
         {
+
             Node pom=first;
 
             while(pom.getNext()!=null)
