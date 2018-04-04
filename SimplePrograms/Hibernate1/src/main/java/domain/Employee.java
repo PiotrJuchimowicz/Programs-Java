@@ -1,16 +1,21 @@
 package domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
+
+import javax.persistence.*;
 
 @Entity
+@Table(name = "Pracownik")
 public class Employee
 {
     @Id
     @GeneratedValue
+    @Column(name = "ID")
     private long id;
-    private  String firstName,lastName;
+    @Column(name="imie",length = 20)
+    private  String firstName;
+    @Column(name="nazwisko",columnDefinition = "Varchar(15) NOT NULL")
+    private String lastName;
+    @Column(name = "wynagordzenie",precision = 10)
     private double salary;
 
     public long getId() {
