@@ -1,12 +1,10 @@
 package domain;
 
-
-import  java.sql.*;
-import  java.util.Calendar;
-import java.util.Date;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.sql.Date;
+import java.sql.Time;
+import java.sql.Timestamp;
+import java.util.Calendar;
 
 @Entity
 public class DateTime
@@ -14,13 +12,50 @@ public class DateTime
     @Id
     @GeneratedValue
     private long id;
+    private  java.sql.Date dateSql;
+    private java.sql.Time timeSql;
+    private java.sql.Timestamp timestampSql;
 
-    private
+    @Temporal(TemporalType.DATE)
+    private java.util.Date dateUtil1;
+    @Temporal(TemporalType.TIME)
+    private java.util.Date dateUtil2;
+    @Temporal(TemporalType.TIMESTAMP)
+    private java.util.Date dateUtil3;
+    @Temporal(TemporalType.DATE)
+    private java.util.Calendar calendarUtil;
 
-    //Wrappers for class java.util.date
-    private java.sql.Date sqlDate;
-    private Time sqlTime;
-    private Timestamp sqlTimeStamp;
+    public java.util.Date getDateUtil1() {
+        return dateUtil1;
+    }
+
+    public void setDateUtil1(java.util.Date dateUtil1) {
+        this.dateUtil1 = dateUtil1;
+    }
+
+    public java.util.Date getDateUtil2() {
+        return dateUtil2;
+    }
+
+    public void setDateUtil2(java.util.Date dateUtil2) {
+        this.dateUtil2 = dateUtil2;
+    }
+
+    public java.util.Date getDateUtil3() {
+        return dateUtil3;
+    }
+
+    public void setDateUtil3(java.util.Date dateUtil3) {
+        this.dateUtil3 = dateUtil3;
+    }
+
+    public Calendar getCalendarUtil() {
+        return calendarUtil;
+    }
+
+    public void setCalendarUtil(Calendar calendarUtil) {
+        this.calendarUtil = calendarUtil;
+    }
 
     public long getId() {
         return id;
@@ -30,27 +65,27 @@ public class DateTime
         this.id = id;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getDateSql() {
+        return dateSql;
     }
 
-    public void setDate(java.sql.Date date) {
-        this.date = date;
+    public void setDateSql(Date dateSql) {
+        this.dateSql = dateSql;
     }
 
-    public Time getTime() {
-        return time;
+    public Time getTimeSql() {
+        return timeSql;
     }
 
-    public void setTime(Time time) {
-        this.time = time;
+    public void setTimeSql(Time timeSql) {
+        this.timeSql = timeSql;
     }
 
-    public Timestamp getTimestamp() {
-        return timestamp;
+    public Timestamp getTimestampSql() {
+        return timestampSql;
     }
 
-    public void setTimestamp(Timestamp timestamp) {
-        this.timestamp = timestamp;
+    public void setTimestampSql(Timestamp timestampSql) {
+        this.timestampSql = timestampSql;
     }
 }
