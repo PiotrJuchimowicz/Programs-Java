@@ -57,20 +57,17 @@ int readArguments(int number, char **argv, char *source, char *goal)
             //recognises arguments and converts value from string into int
             if (strcmp(argv[i], "-T") == 0 && timeGuard == 0)
             {
-                //if it is not  in range of argv  array,like only -T
-                if (argv[i + 1] == NULL)
-                {
-                    printf("Incorrect number of arguments\n");
-                    return 1;
-                }
                 //if it is in range of argv array we can read value of -T
-                else
+                if(argv[i + 1]>0)
                 {
                     i = i + 1;
-                    if (variable = atoi(argv[i]) != 0) //if atoi can convert string into int
+                    variable=atoi(argv[i]);
+                    if (variable > 0) //if atoi can convert string into int
                     {
                         sleepTime = variable;
                         timeGuard = 2;
+                        
+                        
                     }
                     //if convertion failed
                     else
@@ -78,6 +75,12 @@ int readArguments(int number, char **argv, char *source, char *goal)
                         printf("Incorrect argument types\n");
                         return 1;
                     }
+                }
+                //if it is not  in range of argv  array,like only -T
+               else
+                {
+                    printf("Incorrect number of arguments\n");
+                    return 1;
                 }
             }
             else if (strcmp(argv[i], "-R") == 0 && recursionGuard == 0)
@@ -87,17 +90,13 @@ int readArguments(int number, char **argv, char *source, char *goal)
             }
             else if (strcmp(argv[i], "-M") == 0 && limitGuard == 0)
             {
-                //if it is not  in range of argv  array,like only -M
-                if (argv[i + 1] == NULL)
-                {
-                    printf("Incorrect number of arguments\n");
-                    return 1;
-                }
+               
                 //if it is in range of argv array we can read value of -M
-                else
+               if(argv[i + 1]>0)
                 {
                     i = i + 1;
-                    if (variable = atoi(argv[i]) != 0) //if atoi can convert string into int
+                    variable = atoi(argv[i]);
+                    if ( variable > 0) //if atoi can convert string into int
                     {
                         fileLimit = variable;
                         limitGuard = 2;
@@ -107,6 +106,12 @@ int readArguments(int number, char **argv, char *source, char *goal)
                         printf("Incorrect argument types\n");
                         return 1;
                     }
+                }
+                 //if it is not  in range of argv  array,like only -M
+                else
+                {
+                    printf("Incorrect number of arguments\n");
+                    return 1;
                 }
             }
             else
@@ -150,7 +155,7 @@ int main(int argc, char **argv)
     //we have to check follwing conditions :
 
     //checking  if argv[1] and argv[2] are existing paths
-    if (lstat(source, &Source) != 0 || lstat(goal, &Source) != 0) //bad result
+    if (lstat(source, &Source) != 0 || lstat(goal, &Goal) != 0) //bad result
     {
         printf("One of the paths or both dont exist\n");
         exit(-1);
