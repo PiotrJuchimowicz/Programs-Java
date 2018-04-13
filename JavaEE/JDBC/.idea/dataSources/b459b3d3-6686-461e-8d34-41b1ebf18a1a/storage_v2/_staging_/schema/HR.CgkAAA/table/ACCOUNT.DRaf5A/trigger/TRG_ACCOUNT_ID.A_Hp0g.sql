@@ -1,0 +1,11 @@
+CREATE TRIGGER TRG_ACCOUNT_ID
+BEFORE INSERT ON ACCOUNT
+FOR EACH ROW
+BEGIN
+SELECT account_id_seq.nextval
+INTO :new.id
+FROM dual;
+END;
+  /
+
+

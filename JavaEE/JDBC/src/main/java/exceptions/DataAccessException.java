@@ -1,13 +1,11 @@
 package exceptions;
 
-public class DataAccessException extends RuntimeException
-{
+public class DataAccessException extends RuntimeException {
     public DataAccessException() {
     }
 
-    public DataAccessException(Throwable cause)
-    {
-        super (cause);
+    public DataAccessException(Throwable cause) {
+        super(cause);
     }
 
 }
