@@ -17,8 +17,6 @@ public class Gra {
     private ArrayList<Rozgrywki> Rozgrywki = new ArrayList<Rozgrywki>();
     private ArrayList<Sedzia> Sedziowie = new ArrayList<Sedzia>();
     private ArrayList<Druzyna> Druzyny = new ArrayList<Druzyna>();
-    private Rozgrywki polfinaly[] = new Rozgrywki[2];
-    private Rozgrywki finall = new Rozgrywki();
 
     public ArrayList<Druzyna> getDruzyny() {
         return Druzyny;

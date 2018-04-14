@@ -28,10 +28,7 @@ public class Rozgrywki {
 
 
 
-    public void setRozgrywki(Siatkowka x1, DwaOgnie x2, PrzeciaganieLiny x3, Druzyna x, Druzyna y) {
-        druzynaA = x;
-        druzynaB = y;
-    }
+
 
     public Rozgrywki(Siatkowka x1, DwaOgnie x2, PrzeciaganieLiny x3, Druzyna x4, Druzyna x5) {
         mecz_siatkowki = new Siatkowka(x1);

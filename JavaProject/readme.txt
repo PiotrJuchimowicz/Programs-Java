@@ -1,0 +1,1 @@
+This project ensures the management of team games.
