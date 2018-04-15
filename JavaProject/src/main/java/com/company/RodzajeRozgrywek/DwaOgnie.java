@@ -13,13 +13,13 @@ public class DwaOgnie extends Mecz {
     private int liczba_zbitychA;
     private int liczba_zbitychB;
 
-    //konstruktory
+
     public DwaOgnie() {
 
     }
 
 
-    public DwaOgnie(Sedzia x1, boolean wynik1, boolean wynik2, int lA, int lB, int d, String m, int r)//Jesli sa rozne liczby graczy w druzynach to druzyna ktora przegrala moze miec wiecej zbic po stronie sojej
+    public DwaOgnie(Sedzia x1, boolean wynik1, boolean wynik2, int lA, int lB, int d, String m, int r)
     {
         sedzia = x1;
         wynikA = wynik1;
@@ -63,5 +63,19 @@ public class DwaOgnie extends Mecz {
         sedzia = s;
     }
 
-
+    @Override
+    public String toString() {
+        return "DwaOgnie{" +
+                "liczba_zbitychA=" + liczba_zbitychA +
+                ", liczba_zbitychB=" + liczba_zbitychB +
+                ", sedzia=" + sedzia +
+                ", wynikA=" + wynikA +
+                ", wynikB=" + wynikB +
+                ", miesiac='" + miesiac + '\'' +
+                ", dzien=" + dzien +
+                ", rok=" + rok +
+                ", skutecznoscA=" + skutecznoscA +
+                ", skutecznoscB=" + skutecznoscB +
+                '}';
+    }
 }

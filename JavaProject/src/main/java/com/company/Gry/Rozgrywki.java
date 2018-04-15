@@ -33,6 +33,7 @@ public class Rozgrywki {
     public Rozgrywki(Siatkowka x1, DwaOgnie x2, PrzeciaganieLiny x3, Druzyna x4, Druzyna x5) {
         mecz_siatkowki = new Siatkowka(x1);
         mecz_siatkowki.skutecznosc();
+        mecz_siatkowki.wynik_Siatkowki();
         mecz_dwochogni = new DwaOgnie(x2);
         mecz_dwochogni.skutecznosc();
         mecz_przeciaganialiny = new PrzeciaganieLiny(x3);
@@ -104,7 +105,7 @@ public class Rozgrywki {
         }
 
         if (punktyA > punktyB) {
-            //druzynaA.dodaj_zyciestwo();
+
             for (int y = 0; y < lista.size(); y++) {
                 if (lista.get(y).getNazwa().equals(druzynaA.getNazwa()))
                     lista.get(y).dodaj_zyciestwo();
@@ -117,7 +118,7 @@ public class Rozgrywki {
                 if (lista.get(y).getNazwa().equals(druzynaB.getNazwa()))
                     lista.get(y).dodaj_zyciestwo();
             }
-            //druzynaB.dodaj_zyciestwo();
+
 
             return druzynaB;
         } else {
@@ -145,5 +146,15 @@ public class Rozgrywki {
 
     }
 
-
+    @Override
+    public String toString() {
+        return "Rozgrywki{" +
+                "mecz_siatkowki=" + mecz_siatkowki +
+                ", mecz_dwochogni=" + mecz_dwochogni +
+                ", mecz_przeciaganialiny=" + mecz_przeciaganialiny +
+                ", druzynaA=" + druzynaA +
+                ", druzynaB=" + druzynaB +
+                ", wspolczynnik_ilosciowy=" + wspolczynnik_ilosciowy +
+                '}';
+    }
 }

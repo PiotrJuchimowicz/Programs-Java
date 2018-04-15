@@ -20,4 +20,12 @@ public class SedziaPomocniczy extends Sedzia {
         iloscSedziowan = var.iloscSedziowan;
     }
 
+    @Override
+    public String toString() {
+        return "SedziaPomocniczy{" +
+                "simie='" + simie + '\'' +
+                ", snazwisko='" + snazwisko + '\'' +
+                ", iloscSedziowan=" + iloscSedziowan +
+                '}';
+    }
 }

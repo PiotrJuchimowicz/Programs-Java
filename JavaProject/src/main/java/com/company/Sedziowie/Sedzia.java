@@ -52,8 +52,13 @@ public class Sedzia {
         return iloscSedziowan;
     }
 
+    @Override
     public String toString() {
-        return simie + " " + snazwisko + " ilość sędziowanych meczy:  " + iloscSedziowan;
+        return "Sedzia{" +
+                "simie='" + simie + '\'' +
+                ", snazwisko='" + snazwisko + '\'' +
+                ", iloscSedziowan=" + iloscSedziowan +
+                '}';
     }
 
     public void zwieksz_liczbe_sedziowanych_meczyoJEDEN() {

@@ -1,5 +1,6 @@
 package com.company.Inne;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -132,5 +133,14 @@ public class Druzyna {
 
     }
 
-
+    @Override
+    public String toString() {
+        return "Druzyna{" +
+                "nazwa='" + nazwa + '\'' +
+                ", zawodnicy=" + Arrays.toString(zawodnicy) +
+                ", udzial=" + udzial +
+                ", zwyciestwa=" + zwyciestwa +
+                ", liczba_zawodnikow=" + liczba_zawodnikow +
+                '}';
+    }
 }

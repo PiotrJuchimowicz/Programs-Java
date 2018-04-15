@@ -49,9 +49,12 @@ public class Zawodnik {
         return wiek;
     }
 
+    @Override
     public String toString() {
-
-        return imie + " " + nazwisko + " " + wiek;
+        return "Zawodnik{" +
+                "imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", wiek=" + wiek +
+                '}';
     }
-
 }

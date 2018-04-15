@@ -518,6 +518,10 @@ public class Gra {
 
 
             Rozgrywki r = new Rozgrywki(ms, mdo, mpl, dA, dB);
+            ms.wynik_Siatkowki();
+            ms.skutecznosc();
+            mdo.skutecznosc();
+            mpl.skutecznosc();
             r.zwyciezca(getDruzyny());
             Rozgrywki.add(r);
             pom++;

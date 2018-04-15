@@ -16,8 +16,8 @@ public abstract class Mecz {
     protected String miesiac;
     protected int dzien, rok;
 
-    // Kazda z druzyn ma swoja skutecznosc w danym meczu(Mozna bedzie tez zrobic skutecznosc ogolna ze wszystkich meczy)
-    protected float skutecznoscA = 0, skutecznoscB = 0;// W uproszczeniu stosunek zwyciestw do dlugosci gry. Skutecznosc jest liczona z pozimu metody abstrakcyjnej
+    // Kazda z druzyn ma swoja skutecznosc w danym meczu
+    protected float skutecznoscA = 0, skutecznoscB = 0;
 
 
     public Mecz()//Konstruktor bezparametrowy
@@ -49,7 +49,7 @@ public abstract class Mecz {
         wynikB = b;
     }
 
-    //Gettery:
+
     public Sedzia getSedzia() {
         return sedzia;
     }

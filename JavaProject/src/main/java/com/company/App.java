@@ -200,7 +200,7 @@ public class App {
                                 System.out.println(gra.szukajDruzyne(nazwas));
                                 break;
                             case 6:
-                                System.out.println("LISTA WSZYSTKICH DRUZYN:\n");//Warto jeszcze zawodnikow wyswietlic do kazdej druzyny
+                                System.out.println("LISTA WSZYSTKICH DRUZYN:\n");
                                 gra.wyswietlWszystkieDruzyny();
                                 break;
                             case 7:

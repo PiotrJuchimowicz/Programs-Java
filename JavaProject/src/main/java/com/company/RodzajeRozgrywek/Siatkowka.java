@@ -99,6 +99,24 @@ public class Siatkowka extends Mecz {
     public int getSetB() {
         return setyB;
     }
+
+    @Override
+    public String toString() {
+        return "Siatkowka{" +
+                "pomocniczy1=" + pomocniczy1 +
+                ", pomocniczy2=" + pomocniczy2 +
+                ", setyA=" + setyA +
+                ", setyB=" + setyB +
+                ", sedzia=" + sedzia +
+                ", wynikA=" + wynikA +
+                ", wynikB=" + wynikB +
+                ", miesiac='" + miesiac + '\'' +
+                ", dzien=" + dzien +
+                ", rok=" + rok +
+                ", skutecznoscA=" + skutecznoscA +
+                ", skutecznoscB=" + skutecznoscB +
+                '}';
+    }
 }
 
 

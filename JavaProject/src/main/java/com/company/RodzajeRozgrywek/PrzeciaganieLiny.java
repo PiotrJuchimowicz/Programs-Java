@@ -60,5 +60,19 @@ public class PrzeciaganieLiny extends Mecz {
         return czaspostronieB;
     }
 
-
+    @Override
+    public String toString() {
+        return "PrzeciaganieLiny{" +
+                "czaspostronieA=" + czaspostronieA +
+                ", czaspostronieB=" + czaspostronieB +
+                ", sedzia=" + sedzia +
+                ", wynikA=" + wynikA +
+                ", wynikB=" + wynikB +
+                ", miesiac='" + miesiac + '\'' +
+                ", dzien=" + dzien +
+                ", rok=" + rok +
+                ", skutecznoscA=" + skutecznoscA +
+                ", skutecznoscB=" + skutecznoscB +
+                '}';
+    }
 }
