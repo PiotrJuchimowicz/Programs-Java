@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 
-
 public class Druzyna {
     private String nazwa;
     private Zawodnik[] zawodnicy;
@@ -12,18 +11,6 @@ public class Druzyna {
     private int zwyciestwa = 0;//Liczba wygranych rozgrywek
     int liczba_zawodnikow;
 
-    public Druzyna()
-    {
-
-    }
-
-    public Druzyna(String nazwa, int pkt) {
-
-
-
-        this.nazwa = nazwa;
-        zwyciestwa = pkt;
-    }
 
     public Druzyna(Druzyna var) {
         nazwa = var.nazwa;
@@ -47,8 +34,6 @@ public class Druzyna {
 
 
     }
-
-
 
 
     public Zawodnik[] getZawodnicy() {
@@ -75,13 +60,6 @@ public class Druzyna {
         udzial = x;
     }
 
-    public void setNazwa(String nazwa) {
-        this.nazwa = nazwa;
-    }
-
-    public void setPunkty(int pkt) {
-        zwyciestwa = pkt;
-    }
 
     public void zapełnij_miejsca_w_druzynie() {
 
@@ -118,15 +96,6 @@ public class Druzyna {
 
     }
 
-    public Zawodnik zwroc_o_podanym_indeksie(int indeks)//Numerujemy od zera
-    {
-        if (indeks >= liczba_zawodnikow) {
-            System.out.println("Niepoprawny indeks");
-            return null;
-        } else
-
-            return zawodnicy[indeks];
-    }
 
     public void dodaj_zyciestwo() {
         zwyciestwa++;

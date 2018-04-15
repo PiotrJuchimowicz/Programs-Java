@@ -9,13 +9,10 @@ import com.company.Sedziowie.*;
 
 
 public class PrzeciaganieLiny extends Mecz {
-    // Skutecznosc bedzie tu liczona jako stosunek czasu liny po stronie A do czasu gry
+    // Skutecznosc bedzie tu liczona jako stosunek czasu liny po stronie danej drużyny do jej  czasu gry
     private float czaspostronieA;
     private float czaspostronieB;
 
-    public PrzeciaganieLiny() {
-
-    }
 
     public PrzeciaganieLiny(Sedzia s, boolean wynik1, boolean wynik2, float czA, float czB, int d, String m, int r) {
         sedzia = s;
@@ -48,9 +45,6 @@ public class PrzeciaganieLiny extends Mecz {
 
     }
 
-    public PrzeciaganieLiny(Sedzia s) {
-        sedzia = s;
-    }
 
     public float getCzasPoStronieA() {
         return czaspostronieA;

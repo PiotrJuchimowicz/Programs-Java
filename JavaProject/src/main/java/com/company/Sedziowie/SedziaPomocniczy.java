@@ -8,11 +8,9 @@ public class SedziaPomocniczy extends Sedzia {
         this.snazwisko = snazwisko;
         this.iloscSedziowan = iloscSedziowan;
 
-    }
-
-    public SedziaPomocniczy() {
 
     }
+
 
     public SedziaPomocniczy(Sedzia var) {
         simie = var.simie;

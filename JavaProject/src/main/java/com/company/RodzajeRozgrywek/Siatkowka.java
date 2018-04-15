@@ -14,6 +14,7 @@ public class Siatkowka extends Mecz {
     private int setyA, setyB;//Sety wygrane przez kazda z druzyn
 
     //Konstruktory
+
     public Siatkowka()
     {
 
@@ -48,19 +49,9 @@ public class Siatkowka extends Mecz {
 
     }
 
-    public void setSiatkowka(Sedzia s, SedziaPomocniczy p1, SedziaPomocniczy p2) {
-        sedzia = s;
-        pomocniczy1 = p1;
-        pomocniczy2 = p2;
-    }
 
-    public void SetPomocniczy1(SedziaPomocniczy var) {
-        pomocniczy1 = var;
-    }
 
-    public void SetPomocniczy2(SedziaPomocniczy var) {
-        pomocniczy2 = var;
-    }
+
 
     public Sedzia GetPomocniczy1() {
         return pomocniczy1;

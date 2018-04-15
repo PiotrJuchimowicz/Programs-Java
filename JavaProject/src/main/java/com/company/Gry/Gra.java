@@ -47,12 +47,6 @@ public class Gra {
         }
     }
 
-    public boolean czy_Istnieje_Sedzia(Sedzia s) {
-        if (Sedziowie.contains(s))
-            return true;
-        else
-            return false;
-    }
 
     public boolean czy_jest_sedzia_o_ImieniuiNaziwsku(String imie, String nazwisko) {
         for (int i = 0; i < Sedziowie.size(); i++) {
@@ -109,17 +103,11 @@ public class Gra {
         return false;
     }
 
-    public void wycofajDruzyne(Druzyna x) {              //wycofuje druzyne, ale nie usuwa jej
-        x.setUdzial(false);
-    }
 
     public void usunDruzyne(Druzyna x) {                 // usuwa druzyne
         Druzyny.remove(x);
     }
 
-    public void dodajRozgrywki(Rozgrywki x) {            //dodaje rozgrywki
-        Rozgrywki.add(x);
-    }
 
     public void usunRozgrywki(Rozgrywki x) {             //usuwa rozgrywki
         Rozgrywki.remove(x);
@@ -129,6 +117,7 @@ public class Gra {
         return Rozgrywki;
     }
 
+    //Do zaimplementowania
     public Rozgrywki szukajRozgrywki(Druzyna x, Druzyna y) {                         //szuka rozgrywki na podstawie podanych druzyn
         for (Rozgrywki r : Rozgrywki) {
             if ((r.getDruzynaA().equals(x)) && (r.getDruzynaB().equals(y)))
@@ -140,8 +129,7 @@ public class Gra {
     }
 
 
-    public void Wczytywanie_druzyn_z_pliku(Scanner input) throws FileNotFoundException// Doda konkretna druzyne do bazy danych tylko wtedy gdy jeszcze jej tam nie ma
-    {
+    public void Wczytywanie_druzyn_z_pliku(Scanner input) throws FileNotFoundException {
         LinkedList<Druzyna> lista_druzyn = new LinkedList<Druzyna>();
         String nazwa_pliku;
 
@@ -530,8 +518,6 @@ public class Gra {
 
 
     }
-
-
 
 
     public void sortowanieAlfabetyczne(ArrayList<Druzyna> Druzyny) {                     //sortowania

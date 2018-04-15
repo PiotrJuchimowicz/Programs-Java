@@ -4,7 +4,6 @@ package com.company.RodzajeRozgrywek;
 import com.company.Sedziowie.*;
 
 
-
 public abstract class Mecz {
 
     protected Sedzia sedzia;
@@ -23,30 +22,6 @@ public abstract class Mecz {
     public Mecz()//Konstruktor bezparametrowy
     {
 
-    }
-
-
-
-
-    public void setSedzia(Sedzia ss) {
-
-        sedzia = ss;
-
-
-    }
-
-    public void setData(int d, String m, int r) {
-        dzien = d;
-        miesiac = m;
-        rok = r;
-    }
-
-    public void setWynikA(boolean b) {
-        wynikA = b;
-    }
-
-    public void setWynikB(boolean b) {
-        wynikB = b;
     }
 
 

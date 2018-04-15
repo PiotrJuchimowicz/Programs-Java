@@ -16,7 +16,7 @@ public class App {
         int lz, punkty;
         boolean udzial;
         int iloscsedziowan;
-        Scanner input =null;
+        Scanner input = null;
         input = new Scanner(System.in);
         Gra gra = new Gra();
 
@@ -35,8 +35,6 @@ public class App {
                 System.out.println("4.Zakoncz program.");
 
                 wybor1 = input.nextInt();
-
-
 
 
                 switch (wybor1) {

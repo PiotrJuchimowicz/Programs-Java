@@ -6,8 +6,7 @@ public class Sedzia {
     protected String simie, snazwisko;
     protected int iloscSedziowan = 0;
 
-    public Sedzia()
-    {
+    public Sedzia() {
 
     }
 
@@ -25,20 +24,6 @@ public class Sedzia {
         iloscSedziowan = var.iloscSedziowan;
     }
 
-
-    public void setImie(String simie)
-
-    {
-        this.simie = simie;
-    }
-
-    public void setNazwisko(String snazwisko) {
-        this.snazwisko = snazwisko;
-    }
-
-    public void setiloscSedziowan(int iloscSedziowan) {
-        this.iloscSedziowan = iloscSedziowan;
-    }
 
     public String getImie() {
         return simie;

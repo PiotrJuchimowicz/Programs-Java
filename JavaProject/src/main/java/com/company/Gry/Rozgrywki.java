@@ -3,15 +3,12 @@ package com.company.Gry;
 
 import java.util.ArrayList;
 
-import com.company.Sedziowie.*;
+
 import com.company.Inne.*;
-import com.company.Gry.*;
+
 import com.company.RodzajeRozgrywek.*;
 
 
-/**
- * @author Piotr
- */
 public class Rozgrywki {
 
     private Siatkowka mecz_siatkowki;
@@ -20,14 +17,6 @@ public class Rozgrywki {
     private Druzyna druzynaA;
     private Druzyna druzynaB;
     private float wspolczynnik_ilosciowy;
-
-    public Rozgrywki() {
-
-    }
-
-
-
-
 
 
     public Rozgrywki(Siatkowka x1, DwaOgnie x2, PrzeciaganieLiny x3, Druzyna x4, Druzyna x5) {
@@ -127,6 +116,7 @@ public class Rozgrywki {
         }
     }
 
+    //Do zaimplementowania
     public Druzyna najwieksza_skutecznosc() {
         float calkowita_skutecznoscA = 0;
         float calkowita_skutecznoscB = 0;

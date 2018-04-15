@@ -14,13 +14,7 @@ public class DwaOgnie extends Mecz {
     private int liczba_zbitychB;
 
 
-    public DwaOgnie() {
-
-    }
-
-
-    public DwaOgnie(Sedzia x1, boolean wynik1, boolean wynik2, int lA, int lB, int d, String m, int r)
-    {
+    public DwaOgnie(Sedzia x1, boolean wynik1, boolean wynik2, int lA, int lB, int d, String m, int r) {
         sedzia = x1;
         wynikA = wynik1;
         wynikB = wynik2;
@@ -59,9 +53,6 @@ public class DwaOgnie extends Mecz {
         return liczba_zbitychB;
     }
 
-    public DwaOgnie(Sedzia s) {
-        sedzia = s;
-    }
 
     @Override
     public String toString() {
