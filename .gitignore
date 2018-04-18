@@ -1,11 +1,5 @@
 *workspace.xml
-
-
- 
-# Intellij
-.idea/
-*.iml
-*.iws
+*tasks.xml
  
 # Mac
 .DS_Store
