@@ -4,8 +4,9 @@
  */
 
 package com.company.JPA;
+
 import com.company.Models.PurchaseDTO;
 
-public interface PurchaseDao  extends GenericDao<PurchaseDTO,Long>  {
+public interface PurchaseDao extends GenericDao<PurchaseDTO, Long> {
 }
 

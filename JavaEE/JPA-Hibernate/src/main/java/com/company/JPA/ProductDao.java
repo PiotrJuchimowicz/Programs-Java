@@ -7,7 +7,6 @@ package com.company.JPA;
 
 import com.company.Models.ProductDTO;
 
-public interface ProductDao extends GenericDao<ProductDTO,Long>
-{
+public interface ProductDao extends GenericDao<ProductDTO, Long> {
 
 }

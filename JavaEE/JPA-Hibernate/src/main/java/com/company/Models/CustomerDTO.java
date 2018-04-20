@@ -12,17 +12,15 @@ import javax.persistence.Table;
 import java.util.List;
 
 @Entity
-@Table(name="CUSTOMER")
+@Table(name = "CUSTOMER")
 public class CustomerDTO extends AbstractDTO {
-   
+
     private String firstName;
     private String lastName;
     private String email;
 
-    @OneToMany(mappedBy = "customer",cascade={CascadeType.PERSIST, CascadeType.REMOVE})
+    @OneToMany(mappedBy = "customer", cascade = {CascadeType.ALL})
     private List<PurchaseDTO> pucharses;
-
-
 
 
     public CustomerDTO() {
@@ -34,8 +32,6 @@ public class CustomerDTO extends AbstractDTO {
         this.email = email;
         this.pucharses = pucharses;
     }
-
-
 
     public List<PurchaseDTO> getPucharses() {
         return pucharses;
@@ -59,7 +55,7 @@ public class CustomerDTO extends AbstractDTO {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }  
+    }
 
     public String getEmail() {
         return email;
@@ -71,6 +67,6 @@ public class CustomerDTO extends AbstractDTO {
 
     @Override
     public String toString() {
-        return "["+getId()+","+firstName+","+lastName+","+email+"]";
+        return "[" + getId() + "," + firstName + "," + lastName + "," + email + "]";
     }
 }

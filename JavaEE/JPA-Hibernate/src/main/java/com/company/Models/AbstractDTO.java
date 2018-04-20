@@ -7,8 +7,7 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 @MappedSuperclass
-public class AbstractDTO implements Serializable
-{
+public class AbstractDTO implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -20,7 +19,6 @@ public class AbstractDTO implements Serializable
     public void setId(Long id) {
         this.id = id;
     }
-
 
 
 }

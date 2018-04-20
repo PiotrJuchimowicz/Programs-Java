@@ -5,22 +5,21 @@
 
 package com.company.Models;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.List;
 
 @Entity
-@Table(name="PRODUCT")
+@Table(name = "PRODUCT")
 public class ProductDTO extends AbstractDTO {
-   
+
     private String name;
     private Double price;
 
-    @OneToMany(mappedBy ="product" )
+    @OneToMany(mappedBy = "product", cascade = {CascadeType.ALL})
     private List<PurchaseItemDTO> purchaseItems;
-
-
 
 
     public ProductDTO(String name, Double price, List<PurchaseItemDTO> purchaseItems) {
@@ -37,7 +36,8 @@ public class ProductDTO extends AbstractDTO {
         this.purchaseItems = purchaseItems;
     }
 
-    public ProductDTO() {}
+    public ProductDTO() {
+    }
 
     public String getName() {
         return name;
@@ -55,8 +55,8 @@ public class ProductDTO extends AbstractDTO {
         this.price = price;
     }
 
-     @Override
+    @Override
     public String toString() {
-        return "["+getId()+","+name+","+price;
+        return "[" + getId() + "," + name + "," + price;
     }
 }

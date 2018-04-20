@@ -5,22 +5,18 @@
 
 package com.company.Models;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name="PURCHASE_ITEM")
+@Table(name = "PURCHASE_ITEM")
 public class PurchaseItemDTO extends AbstractDTO {
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "productID")
     private ProductDTO product;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "purchaseID")
     private PurchaseDTO purchase;
     private Integer quantity;
-
 
 
     public PurchaseItemDTO(ProductDTO product, PurchaseDTO purchase, Integer quantity) {

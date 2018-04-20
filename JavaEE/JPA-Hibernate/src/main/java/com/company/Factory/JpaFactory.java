@@ -11,11 +11,11 @@ public class JpaFactory {
     private EntityManagerFactory emf;
 
     private JpaFactory() {
-        emf = Persistence.createEntityManagerFactory("PU");
+        emf = Persistence.createEntityManagerFactory("mydatabase");
     }
 
-    public static JpaFactory getInstanance() {
-        if (instance==null) {
+    private static JpaFactory getInstanance() {
+        if (instance == null) {
             instance = new JpaFactory();
         }
         return instance;
@@ -23,5 +23,12 @@ public class JpaFactory {
 
     public static EntityManager getEntityManager() {
         return getInstanance().emf.createEntityManager();
+    }
+
+    public static void closeEntityManagerFactory() {
+        if (instance != null) {
+            instance.emf.close();
+            instance = null;
+        }
     }
 }
