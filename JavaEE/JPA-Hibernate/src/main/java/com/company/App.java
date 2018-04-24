@@ -3,6 +3,7 @@ package com.company;
 import com.company.Hibernate.*;
 import com.company.JPA.*;
 import com.company.Models.*;
+import net.bytebuddy.dynamic.scaffold.MethodGraph;
 
 import java.util.Date;
 import java.util.LinkedList;
@@ -70,10 +71,13 @@ public class App {
 
         //adding customer
         //I've turned on cascade type ALL so all I need to do is add the Customer.
-        customerDao.save(customer);
+
         //little update
         //Date and City have been updated
         long id = 1;
+
+
+        customerDao.save(customer);
         PurchaseDTO updatedPurchase = purchaseDao.findById(id);
         updatedPurchase.setDate(new Date());
         updatedPurchase.setDeliveryCity("Bialystok");
