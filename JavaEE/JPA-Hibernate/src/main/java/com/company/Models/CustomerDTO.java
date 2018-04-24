@@ -19,7 +19,7 @@ public class CustomerDTO extends AbstractDTO {
     private String lastName;
     private String email;
 
-    @OneToMany(mappedBy = "customer", cascade = {CascadeType.ALL})
+    @OneToMany(mappedBy = "customer", cascade = {CascadeType.MERGE})
     private List<PurchaseDTO> pucharses;
 
 

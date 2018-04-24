@@ -12,10 +12,10 @@ import java.util.List;
 @Entity
 @Table(name = "PURCHASE")
 public class PurchaseDTO extends AbstractDTO {
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "customerID")
     private CustomerDTO customer;
-    @OneToMany(mappedBy = "purchase", cascade = {CascadeType.ALL})
+    @OneToMany(mappedBy = "purchase", cascade = {CascadeType.MERGE})
     private List<PurchaseItemDTO> purchaseItems;
 
     private String deliveryCity;
@@ -23,7 +23,7 @@ public class PurchaseDTO extends AbstractDTO {
     private int deliveryStreetNumber;
 
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "deliveredBy")
     private DeliveryCompanyDTO deliveryCompany;
 

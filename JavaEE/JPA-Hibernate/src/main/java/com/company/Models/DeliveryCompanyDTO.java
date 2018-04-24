@@ -15,7 +15,7 @@ public class DeliveryCompanyDTO extends AbstractDTO {
     private String street;
     private int streetNumber;
 
-    @OneToMany(mappedBy = "deliveryCompany", cascade = {CascadeType.ALL})
+    @OneToMany(mappedBy = "deliveryCompany", cascade = {CascadeType.MERGE})
     private List<PurchaseDTO> purchases;
 
     public DeliveryCompanyDTO() {

@@ -10,10 +10,10 @@ import javax.persistence.*;
 @Entity
 @Table(name = "PURCHASE_ITEM")
 public class PurchaseItemDTO extends AbstractDTO {
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "productID")
     private ProductDTO product;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "purchaseID")
     private PurchaseDTO purchase;
     private Integer quantity;

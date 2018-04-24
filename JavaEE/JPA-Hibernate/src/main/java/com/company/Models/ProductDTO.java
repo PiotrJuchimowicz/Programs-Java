@@ -18,7 +18,7 @@ public class ProductDTO extends AbstractDTO {
     private String name;
     private Double price;
 
-    @OneToMany(mappedBy = "product", cascade = {CascadeType.ALL})
+    @OneToMany(mappedBy = "product", cascade = {CascadeType.MERGE})
     private List<PurchaseItemDTO> purchaseItems;
 
 
