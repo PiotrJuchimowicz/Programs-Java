@@ -11,6 +11,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "PURCHASE")
+@NamedQueries({@NamedQuery(name = "selectAllPurchases",query = "Select purchase From PurchaseDTO  purchase"),@NamedQuery(name = "selectAllPurchasesV2",query = "select  distinct p From PurchaseDTO p left join fetch p.purchaseItems i ")})
+
 public class PurchaseDTO extends AbstractDTO {
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "customerID")

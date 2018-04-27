@@ -6,8 +6,10 @@ import com.company.Models.ProductDTO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NamedQuery;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
+import java.lang.reflect.Type;
 import java.util.List;
 
 public class ProductJpaDao extends GenericJpaDao<ProductDTO, Long> implements ProductDao {
@@ -60,9 +62,13 @@ public class ProductJpaDao extends GenericJpaDao<ProductDTO, Long> implements Pr
     {
         EntityManager em = JpaFactory.getEntityManager();
         TypedQuery<ProductDTO> query = em.createNamedQuery("findWithMostPieces",ProductDTO.class);
-
+        TypedQuery<Integer> query1=em.createQuery("Select max(d.product.purchaseItems.size) From PurchaseItemDTO d group by d.product.id Order By(max(d.product.purchaseItems.size ))DESC ",Integer.class);
+        query1.setFirstResult(0);
+        query1.setMaxResults(1);
+        Integer pom = query1.getSingleResult();
+        Long l = new Long(pom);
+        query.setParameter("subquerry",l);
         List<ProductDTO> result =query.getResultList();
-
         em.close();
         JpaFactory.closeEntityManagerFactory();
 
@@ -70,16 +76,21 @@ public class ProductJpaDao extends GenericJpaDao<ProductDTO, Long> implements Pr
     }
 
     @Override
-    public List<Long>  test()
+    public void bulkUpdate(Integer percent)
     {
         EntityManager em = JpaFactory.getEntityManager();
 
-        TypedQuery<Long> q= em.createNamedQuery("test", Long.class);
-       List<Long> result = q.getResultList();
+        Query query = em.createNamedQuery("changePrice");
+        query.setParameter("percent",percent);
+        em.getTransaction().begin();
+        query.executeUpdate();
+        em.getTransaction().commit();
+
+
         em.close();
         JpaFactory.closeEntityManagerFactory();
-
-        return  result;
     }
+
+
 
 }

@@ -16,9 +16,11 @@ public interface ProductDao extends GenericDao<ProductDTO, Long> {
 
     List<ProductDTO> findWithoutPurchase();
 
-    List<ProductDTO> findWithMostPieces();
+    List <ProductDTO>  findWithMostPieces();
 
-    List<Long>  test();
+    void bulkUpdate(Integer percent);
+
+
 
 
 

@@ -13,8 +13,8 @@ import java.util.List;
 @Entity
 @Table(name = "PRODUCT")
 @NamedQueries({@NamedQuery(name = "findInRange", query = "select p From ProductDTO p where price between ?1 and ?2"),
-        @NamedQuery(name = "findTheExpensivest", query = "SELECT p from  ProductDTO p  WHERE  p.price = (select max(price) From ProductDTO )"), @NamedQuery(name = "findWithoutPurchase", query = "select r From ProductDTO r where r.id NOT IN (select b.product.id From PurchaseItemDTO b) "),@NamedQuery(name = "findWithMostPieces",query = "select product from ProductDTO product WHere product.id IN (SELECT b.product.id From PurchaseItemDTO b group by b.product.id having count (b.product.purchaseItems.size)IN(select max(c.product.purchaseItems.size) From PurchaseItemDTO c GROUP BY c.product.id))"),@NamedQuery(name = "test",query = "Select c From s(select count * AS counted From )")})
-//select max(count (c.product.purchaseItems.size)) From PurchaseItemDTO c GROUP BY c.product.id"
+        @NamedQuery(name = "findTheExpensivest", query = "SELECT p from  ProductDTO p  WHERE  p.price = (select max(price) From ProductDTO )"), @NamedQuery(name = "findWithoutPurchase", query = "select r From ProductDTO r where r.id NOT IN (select b.product.id From PurchaseItemDTO b) "),@NamedQuery(name = "findWithMostPieces",query = "select product from ProductDTO product WHere product.id IN (SELECT b.product.id From PurchaseItemDTO b group by b.product.id having count (b.product.purchaseItems.size)= (:subquerry) )"),@NamedQuery(name = "changePrice",query = "update ProductDTO p SET p.price=p.price*((100+ :percent)/100)")})
+
 
 public class ProductDTO extends AbstractDTO {
 

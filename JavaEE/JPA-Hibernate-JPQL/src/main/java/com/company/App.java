@@ -7,6 +7,7 @@ import net.bytebuddy.dynamic.scaffold.MethodGraph;
 import sun.applet.Main;
 
 import javax.persistence.NamedQuery;
+import javax.sound.midi.Soundbank;
 import java.util.Date;
 import java.util.FormatFlagsConversionMismatchException;
 import java.util.LinkedList;
@@ -23,6 +24,7 @@ public class App {
     public static void main(String[] args) {
         CustomerDao customerDao = new CustomerJpaDao();
         ProductDao productDao = new ProductJpaDao();
+        PurchaseDao purchaseDao = new PurchaseJpaDao();
 /*
     List<CustomerDTO> list = customerDao.findByLastName("Kowalski");
 
@@ -61,25 +63,24 @@ public class App {
         System.out.println(list.get(i));
 
 */
-List<Long> list=productDao.test();
-            for (int i=0;i<list.size();i++)
-                System.out.println(list.get(i));
+/*
+        List<ProductDTO> list=productDao.findWithMostPieces();
+        System.out.println(list);
 
-        /*
-        List<ProductDTO> list = productDao.findWithMostPieces();
+        */
 
-        for (int i=0;i<list.size();i++)
-            System.out.println(list.get(i));
+/*
+Double percent;
 
-        long ig=2;
-        ProductDTO d = productDao.findById(ig);
-        List<PurchaseItemDTO> list1 = d.getPurchaseItems();
+productDao.bulkUpdate(10);
 
-        System.out.println(list1.size());
 */
+/*
+List<PurchaseDTO> list = purchaseDao.selectAllPurchasesV2();
 
-
-
+for (PurchaseDTO p : list)
+    System.out.println(p.toString());
+*/
 
 
     }
