@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.Models.Employee;
+
 import javax.persistence.*;
 
 import javax.persistence.EntityManager;
@@ -30,6 +31,7 @@ public class App {
         for(Employee e : list)
             System.out.println(e.toString());
         */
+        /*
         Query query2 = entityManager.createQuery("select  concat(e.firstName,' ',e.lastName,' ',e.salary * 0.2) from Employee e");
         List<Object> list = query2.getResultList();
 
@@ -42,8 +44,35 @@ public class App {
 
         entityManager.close();
         entityManagerFactory.close();
-    }
+        */
 
+        /*
+
+        TypedQuery<Employee> query = entityManager.createQuery("SELECT  e from  Employee e Where e.salary>:minSalary", Employee.class);
+        query.setParameter("minSalary",50000.0);
+
+        for(Employee e : query.getResultList())
+            System.out.println(e.toString());
+
+            */
+
+     Query query = entityManager.createQuery("SELECT  avg(salary),min(salary) From Employee");
+        Object result = query.getSingleResult();
+
+        Object tab[]= (Object[]) result;
+        System.out.println(tab[0]);
+        System.out.println(tab[1]);
+        String napis  = "nbapis";
+
+        
+
+
+
+
+        entityManager.close();
+        entityManagerFactory.close();
+
+    }
 
 
     private static void addEmployees() {
