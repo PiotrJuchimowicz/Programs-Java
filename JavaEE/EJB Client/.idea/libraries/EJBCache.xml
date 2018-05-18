@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="EJBCache">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../EJBCache/out/artifacts/EJBCache_jar/EJBCache.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

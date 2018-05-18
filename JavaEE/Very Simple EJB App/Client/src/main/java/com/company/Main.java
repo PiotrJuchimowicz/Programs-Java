@@ -1,11 +1,12 @@
 package com.company;
 
+
 import Models.AdderRemote;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import java.util.Hashtable;
+import java.util.List;
 import java.util.Properties;
 
 public class Main {
@@ -27,21 +28,22 @@ public class Main {
        */
         Properties jndiProps = new Properties();
         jndiProps.put(Context.INITIAL_CONTEXT_FACTORY, "org.jboss.naming.remote.client.InitialContextFactory");
-        jndiProps.put(Context.PROVIDER_URL,"http-remoting://localhost:8080");
+        jndiProps.put(Context.PROVIDER_URL, "http-remoting://localhost:8080");
         jndiProps.put("jboss.naming.client.ejb.context", true);
         // create a context passing these properties
         Context ctx = new InitialContext(jndiProps);
         //jb:Project/Adder!Models.AdderRemote
 //name = ejb:/JarFile/BeanClass!com.company.RemoteInterface
-        Object object= ctx.lookup("ejb:/Project/Adder!Models.AdderRemote");
+        Object object = ctx.lookup("ejb:/Project/Adder!Models.AdderRemote");
         AdderRemote remote = (AdderRemote) object;
 
-         int x =remote.add(2,3);
-
-        System.out.println(x);
+        int x = remote.add(2, 3);
 
 
-        //System.out.println(object.toString());
+
+        System.out.println(remote.getElement(0));
+
+
 
 
     }

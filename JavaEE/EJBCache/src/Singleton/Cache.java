@@ -3,24 +3,32 @@ package Singleton;
 import CountedString.CountedString;
 import Remote.CacheRemote;
 
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
+import javax.annotation.PostConstruct;
+import javax.ejb.*;
 import java.util.HashMap;
 import java.util.Map;
 
 @Singleton
+@ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)
 public class Cache implements CacheLocal, CacheRemote {
-    private static final  Map<String, Object> cache = new HashMap<>();
+    private Map<String, Object> cache = null;
 
-
-    public  static  Map<String, Object> getCache() {
-        return  cache;
+    @PostConstruct
+    public void initialize() {
+        cache = new HashMap<>();
     }
 
 
+    public Map<String, Object> getCache() {
+        return cache;
+    }
+
+
+    @Lock(LockType.WRITE)
     @Override
     public void add(String key, Object value) {
-        if(cache.containsKey(key))
+        System.out.println("adding");
+        if (cache.containsKey(key))
             return;
 
         CountedString cs = (CountedString) value;
@@ -29,25 +37,26 @@ public class Cache implements CacheLocal, CacheRemote {
 
     }
 
+    @Lock(LockType.READ)
     @Override
     public Object get(String key) {
 
-        if(!cache.containsKey(key))
+        if (!cache.containsKey(key))
             return null;
 
         Object o = cache.get(key);
-        CountedString cs = (CountedString)o;
+        CountedString cs = (CountedString) o;
         cs.startCount();
 
         return cache.get(key);
     }
 
+    @Lock(LockType.READ)
     @Override
     public boolean contains(String key) {
         Object o = cache.get(key);
-        if(o!=null)
-        {
-            CountedString cs = (CountedString)o;
+        if (o != null) {
+            CountedString cs = (CountedString) o;
             cs.startCount();
         }
 
@@ -55,13 +64,32 @@ public class Cache implements CacheLocal, CacheRemote {
 
     }
 
+    @Lock(LockType.WRITE)
     @Override
     public Object remove(String key) {
-        if(!cache.containsKey(key))
+        if (!cache.containsKey(key))
             return null;
 
         Object object = cache.get(key);
         cache.remove(key);
         return object;
     }
+
+    @Schedule(minute = "1/2", persistent = false)
+    public void timer()
+    {
+        Map<String, Object> map = getCache();
+
+
+        for (String key : map.keySet()) {
+            Object value = map.get(key);
+
+            CountedString cs = (CountedString) value;
+            if (((System.nanoTime() / 1000000000) - cs.getStart()) > 120) {
+                map.remove(key);
+            }
+        }
+    }
+
+
 }
