@@ -3,17 +3,26 @@ package com.company;
 import static java.lang.Thread.*;
 
 public class Runner extends Thread {
-    public void run()
-    {
-        for(int i=0;i<10;i++)
-        {
-            System.out.println("Hello " + i);
-            try {
-                sleep(100);
-            } catch (InterruptedException e) {
-                System.out.println("Interrupt catched");
+    public  int i;
 
+    public void run() {
+
+        while (true) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+            System.out.println(i);
+            i++;
         }
+    }
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
     }
 }
