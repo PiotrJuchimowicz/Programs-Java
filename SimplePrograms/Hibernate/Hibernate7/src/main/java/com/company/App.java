@@ -1,9 +1,8 @@
 package com.company;
 
-import Models.Address;
-import Models.Employee;
+import OneToOneBidirectional.Address;
+import OneToOneBidirectional.Employee;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

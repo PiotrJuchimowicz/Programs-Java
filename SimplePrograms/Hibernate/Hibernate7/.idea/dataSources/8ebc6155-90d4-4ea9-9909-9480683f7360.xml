@@ -900,13 +900,521 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="226" parent="3" name="hibernate_sequence">
+    <table id="226" parent="3" name="address">
       <Engine>MyISAM</Engine>
     </table>
-    <column id="227" parent="226" name="next_val">
+    <table id="227" parent="3" name="animal">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="228" parent="3" name="author">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="229" parent="3" name="book">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="230" parent="3" name="book_author">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="231" parent="3" name="capital">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="232" parent="3" name="country">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="233" parent="3" name="customer">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="234" parent="3" name="delivery_company">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="235" parent="3" name="employee">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="236" parent="3" name="phone">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="237" parent="3" name="product">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="238" parent="3" name="purchase">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="239" parent="3" name="purchase_item">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="240" parent="3" name="worker">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="241" parent="3" name="zoo">
+      <Engine>MyISAM</Engine>
+    </table>
+    <column id="242" parent="226" name="id">
       <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="243" parent="226" name="Street">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="244" parent="226" name="Town">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="245" parent="226" name="streetNumber">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="246" parent="226" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="247" parent="227" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="248" parent="227" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="227" name="type">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="250" parent="227" name="weight">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="251" parent="227" name="animalID">
+      <Position>5</Position>
       <DataType>bigint(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
+    <column id="252" parent="227" name="zoo_id">
+      <Position>6</Position>
+      <DataType>bigint(20)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="253" parent="227" name="FKljy34yxa6mm6ls7v2tgkwucrr">
+      <ColNames>animalID</ColNames>
+    </index>
+    <index id="254" parent="227" name="FK9jglxd4bwhinc96mi01m4unga">
+      <ColNames>zoo_id</ColNames>
+    </index>
+    <key id="255" parent="227" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="256" parent="228" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="228" name="age">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="258" parent="228" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="259" parent="228" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="260" parent="229" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="261" parent="229" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="262" parent="229" name="pages">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="263" parent="229" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="264" parent="230" name="books_id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="230" name="authors_id">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="266" parent="230" name="FKimn1h9jx7v2q8d7w1s45dpsd2">
+      <ColNames>books_id</ColNames>
+    </index>
+    <index id="267" parent="230" name="FKt42qaxhbq87yfijncjfrs5ukc">
+      <ColNames>authors_id</ColNames>
+    </index>
+    <column id="268" parent="231" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="269" parent="231" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="270" parent="231" name="population">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="271" parent="231" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="272" parent="232" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="273" parent="232" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="274" parent="232" name="capital_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="275" parent="232" name="FKq3g3cae5vuqhcib862mx6o9oh">
+      <ColNames>capital_id</ColNames>
+    </index>
+    <key id="276" parent="232" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="277" parent="233" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="278" parent="233" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="279" parent="233" name="firstName">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="280" parent="233" name="lastName">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="281" parent="233" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="282" parent="234" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="283" parent="234" name="city">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="284" parent="234" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="285" parent="234" name="street">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="286" parent="234" name="streetNumber">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="234" name="zipCode">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="288" parent="234" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="289" parent="235" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="235" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="291" parent="235" name="surname">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="292" parent="235" name="pesel">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="293" parent="235" name="ownerID">
+      <Position>5</Position>
+      <DataType>bigint(20)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="294" parent="235" name="FK9kpo0blfmmk3hysi4e6j09rad">
+      <ColNames>ownerID</ColNames>
+    </index>
+    <key id="295" parent="235" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="296" parent="236" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="297" parent="236" name="number">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="298" parent="236" name="type">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="299" parent="236" name="ownerID">
+      <Position>4</Position>
+      <DataType>bigint(20)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="300" parent="236" name="FK368qjjukil5p2ku89u2cwrces">
+      <ColNames>ownerID</ColNames>
+    </index>
+    <key id="301" parent="236" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="302" parent="237" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="237" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="304" parent="237" name="price">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="305" parent="237" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="306" parent="238" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="307" parent="238" name="date">
+      <Position>2</Position>
+      <DataType>datetime|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="308" parent="238" name="deliveryCity">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="309" parent="238" name="deliveryStreet">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="310" parent="238" name="deliveryStreetNumber">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="311" parent="238" name="customerID">
+      <Position>6</Position>
+      <DataType>bigint(20)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="312" parent="238" name="deliveredBy">
+      <Position>7</Position>
+      <DataType>bigint(20)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="313" parent="238" name="FKqk7wln3kcg9mr32obwqp2mi0d">
+      <ColNames>customerID</ColNames>
+    </index>
+    <index id="314" parent="238" name="FKopio8abg24nsaqh8bul1nodfq">
+      <ColNames>deliveredBy</ColNames>
+    </index>
+    <key id="315" parent="238" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="316" parent="239" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="317" parent="239" name="quantity">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="318" parent="239" name="productID">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="319" parent="239" name="purchaseID">
+      <Position>4</Position>
+      <DataType>bigint(20)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="320" parent="239" name="FKpmyvydg5uyxh506ofwrdpvquh">
+      <ColNames>productID</ColNames>
+    </index>
+    <index id="321" parent="239" name="FKom73sqjfxnlk6sohnwtkw3urk">
+      <ColNames>purchaseID</ColNames>
+    </index>
+    <key id="322" parent="239" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="323" parent="240" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="324" parent="240" name="firstName">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="325" parent="240" name="lastName">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="326" parent="240" name="salary">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="327" parent="240" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="328" parent="241" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="329" parent="241" name="city">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="330" parent="241" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="331" parent="241" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

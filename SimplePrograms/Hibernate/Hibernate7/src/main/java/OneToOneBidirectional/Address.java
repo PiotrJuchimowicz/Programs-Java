@@ -1,4 +1,4 @@
-package Models;
+package OneToOneBidirectional;
 
 import javax.persistence.*;
 
