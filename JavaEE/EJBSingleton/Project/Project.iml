@@ -16,12 +16,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-<<<<<<< HEAD:JavaEE/EJBCache/EJBCache.iml
-    <orderEntry type="library" scope="PROVIDED" name="JBoss 12.0.0.Final" level="application_server_libraries" />
-    <orderEntry type="library" name="jboss-modules" level="project" />
-=======
-    <orderEntry type="library" name="EJB" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="JBoss 12.0.0.Final" level="application_server_libraries" />
->>>>>>> c809056473853ed8aa8bd6a623248802e2ddaec2:JavaEE/EJBSingleton/Project/Project.iml
   </component>
 </module>
