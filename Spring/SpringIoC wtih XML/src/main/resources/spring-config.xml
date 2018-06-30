@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address"
+          class="Models.Address">
+        <constructor-arg index="0" value="18-400"/>
+        <constructor-arg index="1" value="Lomza"/>
+
+    </bean>
+
+
+    <bean id="employee"
+          class="Models.Employee">
+        <constructor-arg  name="address" ref="address"/>
+        <constructor-arg name="age" value="10" />
+        <constructor-arg name="name" type="java.lang.String" value="Piotr"/>
+        <constructor-arg name="surname"  type="java.lang.String" value="Juchimowicz"/>
+    </bean>
+
+</beans>

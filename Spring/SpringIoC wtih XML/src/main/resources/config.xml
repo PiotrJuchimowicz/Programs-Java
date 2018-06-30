@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="animal" class="Domain.Animal" scope="singleton">
+        <property name="name" value="Anyname"/>
+        <property name="weight" value="20.00"/><!--//auto conversion to double-->
+        <property name="nicknameS">
+            <list>
+                <value type="java.lang.String">nickA</value>
+                <value type="java.lang.String">nickB</value>
+                <value type="java.lang.String">nickC</value>
+            </list>
+        </property>
+
+    </bean>
+
+</beans>
