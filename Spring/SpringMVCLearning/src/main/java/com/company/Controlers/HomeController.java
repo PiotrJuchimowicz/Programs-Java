@@ -40,7 +40,9 @@ public class HomeController {
 
         theName=theName.toUpperCase();
 
-        String result = "HI " + theName + " !";
+
+
+        String result = "Hi " + theName + " !";
 
         model.addAttribute("message",result);
 
