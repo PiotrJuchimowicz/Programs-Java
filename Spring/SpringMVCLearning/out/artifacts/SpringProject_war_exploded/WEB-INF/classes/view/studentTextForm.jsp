@@ -6,13 +6,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-//must import tags from library
+<!--Import tagu z biblioteki Springa)-->
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <title>Student Registration Form</title>
 </head>
 <body>
+<!--process Form zostanie dolozone do URL zatem nie trzeba pisac student/processForm(bo juz student wczesniej bylo w url )-->
 <form:form action="processForm" modelAttribute="student">
     First name : <form:input path="firstName"/>
     <br><br>
