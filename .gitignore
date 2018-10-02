@@ -53,7 +53,7 @@ fabric.properties
 
 *workspace.xml
 *tasks.xml
- 
+*.iml
 # Mac
 .DS_Store
  
