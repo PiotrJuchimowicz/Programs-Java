@@ -1,22 +1,24 @@
 package main;
 
-import base.Base;
+import base.DataBase;
 import base.IConnection;
-import static org.junit.jupiter.api.Assertions.*;
+
 import java.util.LinkedList;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class Main {
     public static void main(String[] args) {
-        IConnection connection1 = Base.getConnectionInstance();
-        IConnection connection2 = Base.getConnectionInstance();
-        IConnection connection3 = Base.getConnectionInstance();
-        IConnection connection4 = Base.getConnectionInstance();
-        IConnection connection5 = Base.getConnectionInstance();
-        IConnection connection6 = Base.getConnectionInstance();
-        IConnection connection7 = Base.getConnectionInstance();
-        IConnection connection8 = Base.getConnectionInstance();
-        IConnection connection9 = Base.getConnectionInstance();
+        IConnection connection1 = DataBase.getConnectionInstance();
+        IConnection connection2 = DataBase.getConnectionInstance();
+        IConnection connection3 = DataBase.getConnectionInstance();
+        IConnection connection4 = DataBase.getConnectionInstance();
+        IConnection connection5 = DataBase.getConnectionInstance();
+        IConnection connection6 = DataBase.getConnectionInstance();
+        IConnection connection7 = DataBase.getConnectionInstance();
+        IConnection connection8 = DataBase.getConnectionInstance();
+        IConnection connection9 = DataBase.getConnectionInstance();
 
         List<IConnection> connectionsA = new LinkedList<>();
         connectionsA.add(connection1);
@@ -33,16 +35,16 @@ public class Main {
         connectionsC.add(connection6);
         connectionsC.add(connection9);
 
-        List<Base> bases = new LinkedList<>();
-        bases.add(connection1.getBase());
-        bases.add(connection2.getBase());
-        bases.add(connection3.getBase());
-        bases.add(connection4.getBase());
-        bases.add(connection5.getBase());
-        bases.add(connection6.getBase());
-        bases.add(connection7.getBase());
-        bases.add(connection8.getBase());
-        bases.add(connection9.getBase());
+        List<DataBase> bases = new LinkedList<>();
+        bases.add(connection1.getDataBase());
+        bases.add(connection2.getDataBase());
+        bases.add(connection3.getDataBase());
+        bases.add(connection4.getDataBase());
+        bases.add(connection5.getDataBase());
+        bases.add(connection6.getDataBase());
+        bases.add(connection7.getDataBase());
+        bases.add(connection8.getDataBase());
+        bases.add(connection9.getDataBase());
 
         boolean isAllEqualsInCollectionA = connectionsA.isEmpty() || connectionsA.stream().allMatch(connectionsA.get(0)::equals);
         boolean isAllEqualsInCollectionB = connectionsB.isEmpty() || connectionsB.stream().allMatch(connectionsB.get(0)::equals);

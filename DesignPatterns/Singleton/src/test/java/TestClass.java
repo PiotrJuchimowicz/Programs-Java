@@ -10,9 +10,9 @@ public class TestClass {
 
     @Test
     void sameBaseExistence() {
-        assert connectionA.getBase().equals(connectionB.getBase());
-        assert connectionA.getBase().equals(connectionC.getBase());
-        assert connectionB.getBase().equals(connectionC.getBase());
+        assert connectionA.getDataBase().equals(connectionB.getDataBase());
+        assert connectionA.getDataBase().equals(connectionC.getDataBase());
+        assert connectionB.getDataBase().equals(connectionC.getDataBase());
     }
 
     @Test
