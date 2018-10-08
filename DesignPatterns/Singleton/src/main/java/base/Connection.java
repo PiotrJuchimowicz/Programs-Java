@@ -8,6 +8,10 @@ public final class Connection implements IConnection {
     private static List<Connection> connections = new LinkedList<>();
     private static Integer orderOfConnections = 0;
 
+    private Connection(){
+
+    }
+
     public synchronized static IConnection getConnection() {
         if (connections.size() < 3)
             connections.add(new Connection());
