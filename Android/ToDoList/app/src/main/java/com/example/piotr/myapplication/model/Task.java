@@ -3,15 +3,16 @@ package com.example.piotr.myapplication.model;
 public class Task {
     private String name;
     private String description;
-    private boolean isDone;
+    private int id;
+    private static int idGenerator=0;
 
     public Task() {
     }
 
-    public Task(String name, String description, boolean isDone) {
+    public Task(String name, String description) {
         this.name = name;
         this.description = description;
-        this.isDone = isDone;
+        this.id=idGenerator++;
     }
 
     public String getName() {
@@ -30,11 +31,21 @@ public class Task {
         this.description = description;
     }
 
-    public boolean isDone() {
-        return isDone;
+    public int getId() {
+        return id;
     }
 
-    public void setDone(boolean done) {
-        isDone = done;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public static void decrementIdGeneratorValue(){
+        idGenerator--;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Id: " + id + " name: " + name + "\n" + "description: " + description;
     }
 }

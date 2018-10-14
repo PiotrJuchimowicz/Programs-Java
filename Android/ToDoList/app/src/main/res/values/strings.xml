@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">TODO List</string>
+    <string name="mainActivityInfo">Touch one of done tasks to delete them.</string>
 </resources>
