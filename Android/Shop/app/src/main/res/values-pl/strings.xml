@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aplikacja: sklep</string>
+    <string name="welcome_text">Witamy w sklepie!</string>
+    <string name="see_products">Wyświetl produkty</string>
+    <string name="exit">Wyłącz aplikacje</string>
+    <string name="products_list">Poniżej widzisz dostępne produkty. Możesz je wybrać.</string>
+    <string name="product_details">Dotknij produkt aby zobaczyć szczegóły</string>
+    <string name="selected_one_product">Zaznaczyłeś jeden produkt</string>
+    <string name="selected_multiple_products">Zaznaczyłeś wiele produktów</string>
+    <string name="submit">Podsumowanie</string>
+</resources>

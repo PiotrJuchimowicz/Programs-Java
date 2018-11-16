@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Shop application</string>
+    <string name="welcome_text">Welcome to shop!</string>
+    <string name="see_products">see products</string>
+    <string name="exit">exit application</string>
+    <string name="products_list">Below are available products. Feel free to select them.</string>
+    <string name="product_details">Click product to see details</string>
+    <string name="selected_one_product">You selected one product</string>
+    <string name="selected_multiple_products">You selected multiple products</string>
+    <string name="submit">Submit</string>
+</resources>

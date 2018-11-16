@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">25sp</dimen>
+    <dimen name="imageWidth">50dp</dimen>\
+    <dimen name="imageHeight">50dp</dimen>
+</resources>
