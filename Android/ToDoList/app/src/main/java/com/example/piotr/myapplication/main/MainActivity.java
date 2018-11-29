@@ -38,30 +38,27 @@ public class MainActivity extends AppCompatActivity {
         final ArrayAdapter<Task> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, tasks);
         tasksListView = findViewById(R.id.listOfTasks);
         tasksListView.setAdapter(arrayAdapter);
-        tasksListView.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        tasksListView.setOnItemClickListener((parent, view, position, id) -> {
 
-                try {
-                    Task taskToRemove = database.getTaskBasedOnList(position);
-                    if(taskToRemove.getName().equals("RUN_YOUTUBE")){
-                        Log.i("INFO","Running youtube");
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(taskToRemove.getDescription()));
-                        startActivity(intent);
-                        Log.i("INFO", "Youtube is running");
-                        return;
-                    }
-                    Log.i("INFO", "Removing task with position on list: " + String.valueOf(position));
-                    database.deleteTaskIdBasedOnList(position);
-                    arrayAdapter.notifyDataSetChanged();
-                    Log.w("WARN", "Removed task " + taskToRemove);
-                    Toast.makeText(MainActivity.this, "You deleted : " + taskToRemove, Toast.LENGTH_SHORT).show();
+            try {
+                Task taskToRemove = database.getTaskBasedOnList(position);
+                if(taskToRemove.getName().equals("RUN_YOUTUBE")){
+                    Log.i("INFO","Running youtube");
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(taskToRemove.getDescription()));
+                    startActivity(intent);
+                    Log.i("INFO", "Youtube is running");
+                    return;
                 }
-                catch (Exception e)
-                {
-                    Log.e("ERROR","Unable to delete task with position on list: " + String.valueOf(position));
+                Log.i("INFO", "Removing task with position on list: " + String.valueOf(position));
+                database.deleteTaskIdBasedOnList(position);
+                arrayAdapter.notifyDataSetChanged();
+                Log.w("WARN", "Removed task " + taskToRemove);
+                Toast.makeText(MainActivity.this, "You deleted : " + taskToRemove, Toast.LENGTH_SHORT).show();
+            }
+            catch (Exception e)
+            {
+                Log.e("ERROR","Unable to delete task with position on list: " + String.valueOf(position));
 
-                }
             }
         });
     }
